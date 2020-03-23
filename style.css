@@ -5,34 +5,65 @@
           box-sizing: border-box;
 }
 
+ul {
+  list-style: none;
+}
+
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Trebuchet MS', 'Lucida Sans', sans-serif;
+  font-size: 16px;
   background-color: #ced6e0;
   width: 100%;
   max-width: 1020px;
   margin: 0 auto;
+  background-image: url("assets/bg.png");
+  background-repeat: repeat;
 }
 
 section {
-  margin-bottom: 10px;
+  margin-bottom: 30px;
 }
 
-section summary::-webkit-details-marker {
+section h2 {
+  margin-bottom: 5px;
+  padding: 15px;
+  /* background-color: #f1f2f6; */
+  /* border-bottom: 1px solid #ffffff; */
+  font-weight: 600;
+}
+
+section details {
+  margin-bottom: 10px;
+  -webkit-box-shadow: 0 1px 5px rgba(255, 255, 255, 0.2);
+          box-shadow: 0 1px 5px rgba(255, 255, 255, 0.2);
+}
+
+section details summary::-webkit-details-marker {
   display: none;
 }
 
-section summary {
+section details summary {
+  /* border-radius: 5px 5px 0 0; */
   cursor: pointer;
   padding: 10px;
   font-weight: 400;
   /* text-transform: uppercase; */
   font-size: 16px;
   outline: none;
-  background-color: #dfe4ea;
+  background: #e9e4e0;
   border-bottom: 1px solid #ffffff;
+  color: #444;
+  -webkit-box-shadow: 0 1px 5px rgba(255, 255, 255, 0.2);
+          box-shadow: 0 1px 5px rgba(255, 255, 255, 0.2);
+  -webkit-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
 }
 
-section summary:before {
+section details summary:hover {
+  background: #dad2ca;
+}
+
+section details summary:before {
   content: '';
   background-image: url("assets/angle-right-solid.svg");
   background-position: center center;
@@ -47,12 +78,42 @@ section summary:before {
   transition: all linear 0.3s;
 }
 
-section p {
+section details .answer {
+  padding: 15px;
+  background-color: #e9e4e050;
+  border-bottom: 1px solid #ffffff;
+  font-weight: 600;
+}
+
+section details .answer .answer__list li {
+  margin-top: 10px;
+  font-weight: 400;
+}
+
+section details p {
   padding: 15px;
   background-color: #f1f2f6;
   border-bottom: 1px solid #ffffff;
   font-weight: 600;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
+}
+
+section details p a {
+  display: block;
+  margin-top: 10px;
+  font-weight: 400;
+  color: #34495e;
+  text-decoration: none;
+}
+
+section details p a:hover {
+  color: #95a5a6;
+}
+
+section details p span {
+  display: block;
+  margin-top: 10px;
+  font-weight: 400;
 }
 
 details[open] summary::before {
