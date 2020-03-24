@@ -10,14 +10,15 @@ ul {
 }
 
 body {
-  font-family: 'Trebuchet MS', 'Lucida Sans', sans-serif;
-  font-size: 16px;
-  background-color: #ced6e0;
+  margin: 0 auto;
   width: 100%;
   max-width: 1020px;
-  margin: 0 auto;
+  background-color: #ced6e0;
   background-image: url("assets/bg.png");
   background-repeat: repeat;
+  font-family: 'Trebuchet MS', 'Lucida Sans', sans-serif;
+  font-size: 16px;
+  color: #444;
 }
 
 section {
@@ -50,9 +51,11 @@ section details summary {
   /* text-transform: uppercase; */
   font-size: 16px;
   outline: none;
-  background: #e9e4e0;
+  /* background: #dcdde1; */
+  background: #dcdde175;
   border-bottom: 1px solid #ffffff;
-  color: #444;
+  /* color: #d29d25; */
+  /* color: #444; */
   -webkit-box-shadow: 0 1px 5px rgba(255, 255, 255, 0.2);
           box-shadow: 0 1px 5px rgba(255, 255, 255, 0.2);
   -webkit-transition: 0.3s ease-out;
@@ -60,7 +63,8 @@ section details summary {
 }
 
 section details summary:hover {
-  background: #dad2ca;
+  /* background: #d3d4da; */
+  background: #dcdde1;
 }
 
 section details summary:before {
@@ -80,7 +84,7 @@ section details summary:before {
 
 section details .answer {
   padding: 15px;
-  background-color: #e9e4e050;
+  background-color: #dcdde150;
   border-bottom: 1px solid #ffffff;
   font-weight: 600;
 }
@@ -88,6 +92,47 @@ section details .answer {
 section details .answer .answer__list li {
   margin-top: 10px;
   font-weight: 400;
+}
+
+section details .answer .answer__list li a {
+  position: relative;
+  text-decoration: none;
+  font-weight: 600;
+  color: inherit;
+}
+
+section details .answer .answer__list li a:active {
+  color: #19d4ee;
+}
+
+section details .answer .answer__list li a:after {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+section details .answer .answer__list li a:before {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 1px;
+  background-color: #19d4ee;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+
+section details .answer .answer__list li a:hover::before {
+  -webkit-transform: scaleX(1);
+          transform: scaleX(1);
+  /* background-color: rgba(0, 0, 0, 0.5); */
 }
 
 section details p {

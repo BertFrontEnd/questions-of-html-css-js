@@ -9,14 +9,15 @@ ul {
 }
 
 body {
-  font-family: 'Trebuchet MS', 'Lucida Sans', sans-serif;
-  font-size: 16px;
-  background-color: #ced6e0;
+  margin: 0 auto;
   width: 100%;
   max-width: 1020px;
-  margin: 0 auto;
+  background-color: #ced6e0;
   background-image: url('assets/bg.png');
   background-repeat: repeat;
+  font-family: 'Trebuchet MS', 'Lucida Sans', sans-serif;
+  font-size: 16px;
+  color: #444;
 }
 
 section {
@@ -47,14 +48,17 @@ section {
       /* text-transform: uppercase; */
       font-size: 16px;
       outline: none;
-      background: #e9e4e0;
+      /* background: #dcdde1; */
+      background: #dcdde175;
       border-bottom: 1px solid #ffffff;
-      color: #444;
+      /* color: #d29d25; */
+      /* color: #444; */
       box-shadow: 0 1px 5px rgba(255, 255, 255, 0.2);
       transition: 0.3s ease-out;
 
       &:hover {
-        background: #dad2ca;
+        /* background: #d3d4da; */
+        background: #dcdde1;
       }
 
       &:before {
@@ -74,7 +78,8 @@ section {
 
     .answer {
       padding: 15px;
-      background-color: #e9e4e050;
+      background-color: #dcdde150;
+
       border-bottom: 1px solid #ffffff;
       font-weight: 600;
 
@@ -82,6 +87,44 @@ section {
         li {
           margin-top: 10px;
           font-weight: 400;
+
+          a {
+            position: relative;
+            text-decoration: none;
+            font-weight: 600;
+            color: inherit;
+
+            &:active {
+              color: #19d4ee;
+            }
+
+            &:after {
+              position: absolute;
+              content: '';
+              left: 0;
+              bottom: -2px;
+              width: 100%;
+              height: 1px;
+              background-color: rgba(0, 0, 0, 0.2);
+            }
+
+            &:before {
+              position: absolute;
+              content: '';
+              left: 0;
+              bottom: -2px;
+              width: 100%;
+              height: 1px;
+              background-color: #19d4ee;
+              transition: 0.3s ease-in-out;
+              transform: scaleX(0);
+            }
+
+            &:hover::before {
+              transform: scaleX(1);
+              /* background-color: rgba(0, 0, 0, 0.5); */
+            }
+          }
         }
       }
     }
