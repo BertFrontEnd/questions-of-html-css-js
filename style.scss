@@ -16,7 +16,7 @@ body {
   background-image: url('assets/bg.png');
   background-repeat: repeat;
   font-family: 'Trebuchet MS', 'Lucida Sans', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   color: #444;
 }
 
@@ -46,7 +46,7 @@ section {
       padding: 10px;
       font-weight: 400;
       /* text-transform: uppercase; */
-      font-size: 16px;
+      /* font-size: 16px; */
       outline: none;
       /* background: #dcdde1; */
       background: #dcdde175;
@@ -88,6 +88,30 @@ section {
           margin-top: 10px;
           font-weight: 400;
 
+          span {
+            font-style: italic;
+            /* font-weight: 600; */
+            color: #38bac7;
+            /* color: #38bac7; */
+          }
+
+          mark {
+            background-color: transparent;
+            font-style: italic;
+            color: #38bac7;
+          }
+
+          kbd {
+            background: #f5f5f5;
+            padding: 2px 6px;
+            border-radius: 3px;
+            font-size: 0.875em;
+            font-family: 'Courier New', monospace;
+            word-break: keep-all;
+            border: 1px solid #e6e6e6;
+            text-shadow: 0 1px white;
+          }
+
           a {
             position: relative;
             text-decoration: none;
@@ -104,8 +128,10 @@ section {
               left: 0;
               bottom: -2px;
               width: 100%;
-              height: 1px;
+              height: 2px;
               background-color: rgba(0, 0, 0, 0.2);
+              transition: 0.3s ease-in-out;
+              transform: scaleX(1);
             }
 
             &:before {
@@ -114,7 +140,7 @@ section {
               left: 0;
               bottom: -2px;
               width: 100%;
-              height: 1px;
+              height: 2px;
               background-color: #19d4ee;
               transition: 0.3s ease-in-out;
               transform: scaleX(0);
@@ -122,35 +148,13 @@ section {
 
             &:hover::before {
               transform: scaleX(1);
-              /* background-color: rgba(0, 0, 0, 0.5); */
+            }
+
+            &:hover::after {
+              transform: scaleX(0);
             }
           }
         }
-      }
-    }
-    p {
-      padding: 15px;
-      background-color: #f1f2f6;
-      border-bottom: 1px solid #ffffff;
-      font-weight: 600;
-      /* text-transform: uppercase; */
-
-      a {
-        display: block;
-        margin-top: 10px;
-        font-weight: 400;
-        color: #34495e;
-        text-decoration: none;
-
-        &:hover {
-          color: #95a5a6;
-        }
-      }
-
-      span {
-        display: block;
-        margin-top: 10px;
-        font-weight: 400;
       }
     }
   }
