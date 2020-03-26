@@ -1,1056 +1,1086 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Questions of HTML, CSS & JavaScript</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Questions of HTML, CSS & JavaScript</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
+  <body>
+    <section>
+      <h2>HTML & СSS:</h2>
+      <details>
+        <summary>
+          1. Способы выравнивания блока по горизонтали и вертикали. Реализовать
+          один из них
+        </summary>
+        <div class="answer">
+          <span>Ответ:</span>
+          <ul class="answer__list">
+            <li>
+              - выравнивание с помощью
+              <mark>таблицы</mark>
+            </li>
+            <li>
+              - выравнивание с помощью
+              <mark>отступов</mark>
+            </li>
+            <li>
+              - выравнивание с помощью
+              <mark>line-height</mark>
+            </li>
+            <li>
+              - выравнивание с помощью
+              <mark>растягивания</mark>
+            </li>
+            <li>
+              - выравнивание с помощью отрицательного
+              <mark>margin-top</mark>
+            </li>
+            <li>
+              - выравнивание с помощью
+              <mark>transform</mark>
+            </li>
+            <li>
+              - выравнивание с помощью
+              <mark>псевдоэлемента</mark>
+            </li>
+            <li>
+              - выравнивание с помощью
+              <mark>Flexbox</mark>
+            </li>
+            <li>
+              <a
+                href="https://habr.com/ru/company/netcracker/blog/277433"
+                target="_blank"
+              >
+                Все способы вертикального выравнивания в CSS. © Хабр
+              </a>
+            </li>
+          </ul>
+        </div>
+      </details>
 
-<body>
-  <section>
-    <h2>HTML & СSS:</h2>
-    <details>
-      <summary></summary>
-      1. Способы выравнивания блока по горизонтали и вертикали. Реализовать
-      один из них
-      </summary>
-      <div class="answer">
-        <span>Ответ:</span>
-        <ul class="answer__list">
-          <li>
-            - выравнивание с помощью
-            <mark>таблицы</mark>
-          </li>
-          <li>
-            - выравнивание с помощью
-            <mark>отступов</mark>
-          </li>
-          <li>
-            - выравнивание с помощью
-            <mark>line-height</mark>
-          </li>
-          <li>
-            - выравнивание с помощью
-            <mark>растягивания</mark>
-          </li>
-          <li>
-            - выравнивание с помощью отрицательного
-            <mark>margin-top</mark>
-          </li>
-          <li>
-            - выравнивание с помощью
-            <mark>transform</mark>
-          </li>
-          <li>
-            - выравнивание с помощью
-            <mark>псевдоэлемента</mark>
-          </li>
-          <li>
-            - выравнивание с помощью
-            <mark>Flexbox</mark>
-          </li>
-          <li>
-            <a href="https://habr.com/ru/company/netcracker/blog/277433" target="_blank">
-              Все способы вертикального выравнивания в CSS. © Хабр
-            </a>
-          </li>
-        </ul>
-      </div>
-    </details>
+      <details>
+        <summary>2. Что такое псевдоэлементы и псевдоклассы?</summary>
+        <div class="answer">
+          <span>Ответ:</span>
+          <ul class="answer__list">
+            <li>
+              <mark>Псевдоэлемент</mark>
+              - это виртуальный элемент, которым мы можем манипулировать как
+              обычными html-элементами. Разница в том, что псевдоэлемент не
+              существуют в дереве документа или DOM. Это значит что мы не пишем
+              псевдоэлемент в html-разметке, а создаем их при помощи CSS
+            </li>
+            <li>
+              <mark>Псевдокласс</mark>
+              - это класс в основе которого лежит фантомное состояние элемента
+              или его специфичная характеристика, управляемая через CSS
+            </li>
+            <li>
+              <a
+                href="https://medium.com/@ABatickaya/%D0%B8%D1%81%D1%87%D0%B5%D1%80%D0%BF%D1%8B%D0%B2%D0%B0%D1%8E%D1%89%D0%B5%D0%B5-%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%BE-%D0%BF%D0%BE-%D0%BF%D1%81%D0%B5%D0%B2%D0%B4%D0%BE%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D0%BC-%D0%B8-%D0%BF%D1%81%D0%B5%D0%B2%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D1%81%D1%81%D0%B0%D0%BC-%D0%B2-css-3282b5ea029"
+                target="_blank"
+              >
+                Исчерпывающее руководство по псевдоэлементам и псевдоклассам в
+                CSS. © Medium
+              </a>
+            </li>
+          </ul>
+        </div>
+      </details>
 
-    <details>
-      <summary>2. Что такое псевдоэлементы и псевдоклассы?</summary>
-      <div class="answer">
-        <span>Ответ:</span>
-        <ul class="answer__list">
-          <li>
-            <mark>Псевдоэлемент</mark>
-            - это виртуальный элемент, которым мы можем манипулировать как
-            обычными html-элементами. Разница в том, что псевдоэлемент не
-            существуют в дереве документа или DOM. Это значит что мы не пишем
-            псевдоэлемент в html-разметке, а создаем их при помощи CSS
-          </li>
-          <li>
-            <mark>Псевдокласс</mark>
-            - это класс в основе которого лежит фантомное состояние элемента
-            или его специфичная характеристика, управляемая через CSS
-          </li>
-          <li>
-            <a href="https://medium.com/@ABatickaya/%D0%B8%D1%81%D1%87%D0%B5%D1%80%D0%BF%D1%8B%D0%B2%D0%B0%D1%8E%D1%89%D0%B5%D0%B5-%D1%80%D1%83%D0%BA%D0%BE%D0%B2%D0%BE%D0%B4%D1%81%D1%82%D0%B2%D0%BE-%D0%BF%D0%BE-%D0%BF%D1%81%D0%B5%D0%B2%D0%B4%D0%BE%D1%8D%D0%BB%D0%B5%D0%BC%D0%B5%D0%BD%D1%82%D0%B0%D0%BC-%D0%B8-%D0%BF%D1%81%D0%B5%D0%B2%D0%B4%D0%BE%D0%BA%D0%BB%D0%B0%D1%81%D1%81%D0%B0%D0%BC-%D0%B2-css-3282b5ea029"
-              target="_blank">
-              Исчерпывающее руководство по псевдоэлементам и псевдоклассам в
-              CSS. © Medium
-            </a>
-          </li>
-        </ul>
-      </div>
-    </details>
+      <details>
+        <summary>
+          3. Какие основные свойства у псевдоэлемента after и before?
+        </summary>
+        <div class="answer">
+          <span>Ответ:</span>
+          <ul class="answer__list">
+            <li>
+              <mark>Псевдоэлемент :before</mark>
+              добавляет контент (текст или блок) перед другим html-элементом. И
+              опять же, этот контент по факту не существует в DOM, но мы можем
+              им управлять будто он есть. Обязательно должно быть объявлено
+              CSS-свойство content. Текст, добавленный через псевдоэлемент, не
+              может быть выбран пользователем
+            </li>
+            <li>
+              <mark>Псевдоэлемент :after</mark>
+              используется для добавления контента (текста или блока) после
+              другого html-элемента. И опять же, этот контент по факту не
+              существует в DOM, но мы можем им управлять будто он есть.
+              Обязательно должно быть объявлено CSS-свойство content. Текст,
+              добавленный через псевдоэлемент, не может быть выбран
+              пользователем
+            </li>
+          </ul>
+        </div>
+      </details>
 
-    <details>
-      <summary>
-        3. Какие основные свойства у псевдоэлемента after и before?
-      </summary>
-      <div class="answer">
-        <span>Ответ:</span>
-        <ul class="answer__list">
-          <li>
-            <mark>Псевдоэлемент :before</mark>
-            добавляет контент (текст или блок) перед другим html-элементом. И
-            опять же, этот контент по факту не существует в DOM, но мы можем
-            им управлять будто он есть. Обязательно должно быть объявлено
-            CSS-свойство content. Текст, добавленный через псевдоэлемент, не
-            может быть выбран пользователем
-          </li>
-          <li>
-            <mark>Псевдоэлемент :after</mark>
-            используется для добавления контента (текста или блока) после
-            другого html-элемента. И опять же, этот контент по факту не
-            существует в DOM, но мы можем им управлять будто он есть.
-            Обязательно должно быть объявлено CSS-свойство content. Текст,
-            добавленный через псевдоэлемент, не может быть выбран
-            пользователем
-          </li>
-        </ul>
-      </div>
-    </details>
+      <details>
+        <summary>
+          4. Какие основные свойства у
+          <s>элементов</s>
+          display & content?
+        </summary>
+        <div class="answer">
+          <span>Ответ:</span>
+          <ul class="answer__list">
+            <li>
+              <s>Элемент</s>
+              <mark>display</mark>
+              отвечает за вывод и визуальное отображение элементов на странице.
+              Также с помощью свойства "display" можно изменить тип
+              генерируемого контейнера. Свойство не наследуется
+            </li>
+            <li>
+              <a href="https://html5book.ru/svoystvo-display" target="_blank">
+                Свойство display. © HTML5BOOK.RU
+              </a>
+            </li>
+            <li>
+              <s>Элемент</s>
+              <mark>content</mark>
+              генерирует содержимое, которое визуально отображается на экране
+              монитора, не добавляясь к дереву документа DOM. Программы для
+              чтения с экрана не имеют доступ к содержимому, созданному с
+              использованием псевдоэлементов и не могут его прочитать, поэтому
+              рекомендуется не использовать псевдоэлементы для вставки важного
+              контента на страницу
+            </li>
+            <li>
+              <a href="https://html5book.ru/css-content" target="_blank">
+                CSS content. © HTML5BOOK.RU
+              </a>
+            </li>
+          </ul>
+        </div>
+      </details>
 
-    <details>
-      <summary>
-        4. Какие основные свойства у
-        <s>элементов</s>
-        display & content?
-      </summary>
-      <div class="answer">
-        <span>Ответ:</span>
-        <ul class="answer__list">
-          <li>
-            <s>Элемент</s>
-            <mark>display</mark>
-            отвечает за вывод и визуальное отображение элементов на странице.
-            Также с помощью свойства "display" можно изменить тип
-            генерируемого контейнера. Свойство не наследуется
-          </li>
-          <li>
-            <a href="https://html5book.ru/svoystvo-display" target="_blank">
-              Свойство display. © HTML5BOOK.RU
-            </a>
-          </li>
-          <li>
-            <s>Элемент</s>
-            <mark>content</mark>
-            генерирует содержимое, которое визуально отображается на экране
-            монитора, не добавляясь к дереву документа DOM. Программы для
-            чтения с экрана не имеют доступ к содержимому, созданному с
-            использованием псевдоэлементов и не могут его прочитать, поэтому
-            рекомендуется не использовать псевдоэлементы для вставки важного
-            контента на страницу
-          </li>
-          <li>
-            <a href="https://html5book.ru/css-content" target="_blank">
-              CSS content. © HTML5BOOK.RU
-            </a>
-          </li>
-        </ul>
-      </div>
-    </details>
+      <details>
+        <summary>5. Чем отличается em от rem?</summary>
+        <div class="answer">
+          <span>Ответ:</span>
+          <ul class="answer__list">
+            <li>
+              <mark>em</mark>
+              — в типографике относительная единица длины, равная размеру
+              текущего шрифта. Это утверждение не имеет смысла в вебе, так как
+              мы не используем размер точки (point-size). Но имеет смысл, если
+              мы заменим размер точки на размер шрифта (font-size)
+            </li>
+            <li>
+              <mark>rem</mark>
+              — это корневой em (Root Em). Он создан, чтобы облегчить
+              вычислительные проблемы, с которыми многие иногда сталкиваются.
+              Это единица типографики, равная корневому (базовому) значению
+              font-size. Это значит, что 1rem всегда будет равен значению
+              font-size, которое было определено в html
+            </li>
+            <li>
+              <a href="https://habr.com/ru/post/280125/" target="_blank">
+                REM vs EM – Великий спор. © Хабр
+              </a>
+            </li>
+          </ul>
+        </div>
+      </details>
 
-    <details>
-      <summary>5. Чем отличается em от rem?</summary>
-      <div class="answer">
-        <span>Ответ:</span>
-        <ul class="answer__list">
-          <li>
-            <mark>em</mark>
-            — в типографике относительная единица длины, равная размеру
-            текущего шрифта. Это утверждение не имеет смысла в вебе, так как
-            мы не используем размер точки (point-size). Но имеет смысл, если
-            мы заменим размер точки на размер шрифта (font-size)
-          </li>
-          <li>
-            <mark>rem</mark>
-            — это корневой em (Root Em). Он создан, чтобы облегчить
-            вычислительные проблемы, с которыми многие иногда сталкиваются.
-            Это единица типографики, равная корневому (базовому) значению
-            font-size. Это значит, что 1rem всегда будет равен значению
-            font-size, которое было определено в html
-          </li>
-          <li>
-            <a href="https://habr.com/ru/post/280125/" target="_blank">
-              REM vs EM – Великий спор. © Хабр
-            </a>
-          </li>
-        </ul>
-      </div>
-    </details>
+      <details>
+        <summary>6. Перечислить HTML5 теги</summary>
+        <div class="answer">
+          <span>Ответ:</span>
+          <ul class="answer__list">
+            <li>
+              -
+              <mark>&lt;article&gt;</mark>
+              определяет статью
+            </li>
+            <li>
+              -
+              <mark>&lt;aside&gt;</mark>
+              определяет содержание в стороне от содержимого страницы
+            </li>
+            <li>
+              -
+              <mark>&lt;audio&gt;</mark>
+              определяет звуковое содержимое
+            </li>
+            <li>
+              -
+              <mark>&lt;bdi&gt;</mark>
+              изолирует часть текста, которая может быть отформатирована в
+              другом направлении от другого текста за его пределами
+            </li>
+            <li>
+              -
+              <mark>&lt;canvas&gt;</mark>
+              используется для рисования графики, на лету, с помощью сценариев
+              (обычно JavaScript)
+            </li>
+            <li>
+              -
+              <mark>&lt;data&gt;</mark>
+              связывает данное содержимое с машинно-читаемым переводом
+            </li>
+            <li>
+              -
+              <mark>&lt;datalist&gt;</mark>
+              задает список предварительно заданных параметров для элементов
+              управления вводом
+            </li>
+            <li>
+              -
+              <mark>&lt;details&gt;</mark>
+              определяет дополнительные сведения, которые пользователь может
+              просматривать или скрывать
+            </li>
+            <li>
+              -
+              <mark>&lt;dialog&gt;</mark>
+              определяет диалоговое окно или окно
+            </li>
+            <li>
+              -
+              <mark>&lt;embed&gt;</mark>
+              определяет контейнер для внешнего (не HTML) приложения
+            </li>
+            <li>
+              -
+              <mark>&lt;figcaption&gt;</mark>
+              определяет заголовок для элемента
+              <kbd>&lt;figure&gt;</kbd>
+            </li>
+            <li>
+              -
+              <mark>&lt;figure&gt;</mark>
+              указывает автономное содержимое;
+            </li>
+            <li>
+              -
+              <mark>&lt;footer&gt;</mark>
+              определяет нижний колонтитул для документа или раздела
+            </li>
+            <li>
+              -
+              <mark>&lt;header&gt;</mark>
+              определяет заголовок документа или раздела
+            </li>
+            <li>
+              -
+              <mark>&lt;main&gt;</mark>
+              указывает основное содержимое документа
+            </li>
+            <li>
+              -
+              <mark>&lt;mark&gt;</mark>
+              определяет выделенный/выделенный текст
+            </li>
+            <li>
+              -
+              <mark>&lt;menuitem&gt;</mark>
+              определяет команду/пункт меню, который пользователь может вызвать
+              из всплывающего меню
+            </li>
+            <li>
+              -
+              <mark>&lt;meter&gt;</mark>
+              определяет скалярное измерение в пределах известного диапазона
+              (датчика)
+            </li>
+            <li>
+              -
+              <mark>&lt;nav&gt;</mark>
+              определяет навигационные ссылки
+            </li>
+            <li>
+              -
+              <mark>&lt;output&gt;</mark>
+              определяет результат вычисления
+            </li>
+            <li>
+              -
+              <mark>&lt;picture&gt;</mark>
+              определяет контейнер для нескольких ресурсов изображения
+            </li>
+            <li>
+              -
+              <mark>&lt;progress&gt;</mark>
+              представляет ход выполнения задачи
+            </li>
+            <li>
+              -
+              <mark>&lt;rp&gt;</mark>
+              определяет, что отображать в обозревателях, не поддерживающих
+              аннотации Ruby
+            </li>
+            <li>
+              -
+              <mark>&lt;rt&gt;</mark>
+              определяет объяснение/произношение символов (для
+              восточно-азиатских типографии)
+            </li>
+            <li>
+              -
+              <mark>&lt;ruby&gt;</mark>
+              определяет аннотацию Ruby (для восточно-азиатских типографий)
+            </li>
+            <li>
+              -
+              <mark>&lt;section&gt;</mark>
+              определяет раздел в документе
+            </li>
+            <li>
+              -
+              <mark>&lt;source&gt;</mark>
+              определяет несколько мультимедийных ресурсов для элементов
+              мультимедиа (
+              <kbd>&lt;video&gt;</kbd>
+              и
+              <kbd>&lt;audio&gt;</kbd>
+              )
+            </li>
+            <li>
+              -
+              <mark>&lt;summary&gt;</mark>
+              определяет видимый заголовок для элемента
+              <kbd>&lt;details&gt;</kbd>
+            </li>
+            <li>
+              -
+              <mark>&lt;template&gt;</mark>
+              определяет шаблон
+            </li>
+            <li>
+              -
+              <mark>&lt;time&gt;</mark>
+              определяет дату и время
+            </li>
+            <li>
+              -
+              <mark>&lt;track&gt;</mark>
+              определяет текстовые дорожки для элементов мультимедиа (
+              <kbd>&lt;video&gt;</kbd>
+              и
+              <kbd>&lt;audio&gt;</kbd>
+              )
+            </li>
+            <li>
+              -
+              <mark>&lt;video&gt;</mark>
+              определяет видео или фильм
+            </li>
+            <li>
+              -
+              <mark>&lt;wbr&gt;</mark>
+              определяет возможный разрыв строки
+            </li>
+            <li>
+              <a href="https://html5book.ru/html-tags" target="_blank">
+                HTML-теги. © HTML5BOOK.RU
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://html5book.ru/examples/html-tags.html"
+                target="_blank"
+              >
+                HTML 5.2. теги (имя тега, описание, значение свойства display).
+                © HTML5BOOK.RU
+              </a>
+            </li>
+            <li>
+              <a href="https://html5css.ru/tags/default.php" target="_blank">
+                HTML Справочник всех тегов онлайн и примеры. © HTML5CSS.RU
+              </a>
+            </li>
+          </ul>
+        </div>
+      </details>
 
-    <details>
-      <summary>6. Перечислить HTML5 теги</summary>
-      <div class="answer">
-        <span>Ответ:</span>
-        <ul class="answer__list">
-          <li>
-            -
-            <mark>&lt;article&gt;</mark>
-            определяет статью
-          </li>
-          <li>
-            -
-            <mark>&lt;aside&gt;</mark>
-            определяет содержание в стороне от содержимого страницы
-          </li>
-          <li>
-            -
-            <mark>&lt;audio&gt;</mark>
-            определяет звуковое содержимое
-          </li>
-          <li>
-            -
-            <mark>&lt;bdi&gt;</mark>
-            изолирует часть текста, которая может быть отформатирована в
-            другом направлении от другого текста за его пределами
-          </li>
-          <li>
-            -
-            <mark>&lt;canvas&gt;</mark>
-            используется для рисования графики, на лету, с помощью сценариев
-            (обычно JavaScript)
-          </li>
-          <li>
-            -
-            <mark>&lt;data&gt;</mark>
-            связывает данное содержимое с машинно-читаемым переводом
-          </li>
-          <li>
-            -
-            <mark>&lt;datalist&gt;</mark>
-            задает список предварительно заданных параметров для элементов
-            управления вводом
-          </li>
-          <li>
-            -
-            <mark>&lt;details&gt;</mark>
-            определяет дополнительные сведения, которые пользователь может
-            просматривать или скрывать
-          </li>
-          <li>
-            -
-            <mark>&lt;dialog&gt;</mark>
-            определяет диалоговое окно или окно
-          </li>
-          <li>
-            -
-            <mark>&lt;embed&gt;</mark>
-            определяет контейнер для внешнего (не HTML) приложения
-          </li>
-          <li>
-            -
-            <mark>&lt;figcaption&gt;</mark>
-            определяет заголовок для элемента
-            <kbd>&lt;figure&gt;</kbd>
-          </li>
-          <li>
-            -
-            <mark>&lt;figure&gt;</mark>
-            указывает автономное содержимое;
-          </li>
-          <li>
-            -
-            <mark>&lt;footer&gt;</mark>
-            определяет нижний колонтитул для документа или раздела
-          </li>
-          <li>
-            -
-            <mark>&lt;header&gt;</mark>
-            определяет заголовок документа или раздела
-          </li>
-          <li>
-            -
-            <mark>&lt;main&gt;</mark>
-            указывает основное содержимое документа
-          </li>
-          <li>
-            -
-            <mark>&lt;mark&gt;</mark>
-            определяет выделенный/выделенный текст
-          </li>
-          <li>
-            -
-            <mark>&lt;menuitem&gt;</mark>
-            определяет команду/пункт меню, который пользователь может вызвать
-            из всплывающего меню
-          </li>
-          <li>
-            -
-            <mark>&lt;meter&gt;</mark>
-            определяет скалярное измерение в пределах известного диапазона
-            (датчика)
-          </li>
-          <li>
-            -
-            <mark>&lt;nav&gt;</mark>
-            определяет навигационные ссылки
-          </li>
-          <li>
-            -
-            <mark>&lt;output&gt;</mark>
-            определяет результат вычисления
-          </li>
-          <li>
-            -
-            <mark>&lt;picture&gt;</mark>
-            определяет контейнер для нескольких ресурсов изображения
-          </li>
-          <li>
-            -
-            <mark>&lt;progress&gt;</mark>
-            представляет ход выполнения задачи
-          </li>
-          <li>
-            -
-            <mark>&lt;rp&gt;</mark>
-            определяет, что отображать в обозревателях, не поддерживающих
-            аннотации Ruby
-          </li>
-          <li>
-            -
-            <mark>&lt;rt&gt;</mark>
-            определяет объяснение/произношение символов (для
-            восточно-азиатских типографии)
-          </li>
-          <li>
-            -
-            <mark>&lt;ruby&gt;</mark>
-            определяет аннотацию Ruby (для восточно-азиатских типографий)
-          </li>
-          <li>
-            -
-            <mark>&lt;section&gt;</mark>
-            определяет раздел в документе
-          </li>
-          <li>
-            -
-            <mark>&lt;source&gt;</mark>
-            определяет несколько мультимедийных ресурсов для элементов
-            мультимедиа (
-            <kbd>&lt;video&gt;</kbd>
-            и
-            <kbd>&lt;audio&gt;</kbd>
-            )
-          </li>
-          <li>
-            -
-            <mark>&lt;summary&gt;</mark>
-            определяет видимый заголовок для элемента
-            <kbd>&lt;details&gt;</kbd>
-          </li>
-          <li>
-            -
-            <mark>&lt;template&gt;</mark>
-            определяет шаблон
-          </li>
-          <li>
-            -
-            <mark>&lt;time&gt;</mark>
-            определяет дату и время
-          </li>
-          <li>
-            -
-            <mark>&lt;track&gt;</mark>
-            определяет текстовые дорожки для элементов мультимедиа (
-            <kbd>&lt;video&gt;</kbd>
-            и
-            <kbd>&lt;audio&gt;</kbd>
-            )
-          </li>
-          <li>
-            -
-            <mark>&lt;video&gt;</mark>
-            определяет видео или фильм
-          </li>
-          <li>
-            -
-            <mark>&lt;wbr&gt;</mark>
-            определяет возможный разрыв строки
-          </li>
-          <li>
-            <a href="https://html5book.ru/html-tags" target="_blank">
-              HTML-теги. © HTML5BOOK.RU
-            </a>
-          </li>
-          <li>
-            <a href="https://html5book.ru/examples/html-tags.html" target="_blank">
-              HTML 5.2. теги (имя тега, описание, значение свойства display).
-              © HTML5BOOK.RU
-            </a>
-          </li>
-          <li>
-            <a href="https://html5css.ru/tags/default.php" target="_blank">
-              HTML Справочник всех тегов онлайн и примеры. © HTML5CSS.RU
-            </a>
-          </li>
-        </ul>
-      </div>
-    </details>
+      <details>
+        <summary>7. Какие есть виды селекторов и их приоритетность?</summary>
+        <div class="answer">
+          <span>Ответ:</span>
+          <ul class="answer__list">
+            <li>
+              -
+              <mark>универсальный</mark>
+              селектор, например,
+              <kbd>* {...;}</kbd>
+            </li>
+            <li>
+              - селектор
+              <mark>элемента</mark>
+              , например,
+              <kbd>h1 {...;}</kbd>
+              ;
+            </li>
+            <li>
+              - селектор
+              <mark>класса</mark>
+              , например,
+              <kbd>.headline {...;}</kbd>
+            </li>
+            <li>
+              - селектор
+              <mark>идентификатора</mark>
+              , например,
+              <kbd>#sidebar {...;}</kbd>
+            </li>
+            <li>
+              - селектор
+              <mark>потомка</mark>
+              , например,
+              <kbd>ul li {...;}</kbd>
+            </li>
+            <li>
+              -
+              <mark>дочерний</mark>
+              селектор, например,
+              <kbd>p > strong {...;}</kbd>
+            </li>
+            <li>
+              -
+              <mark>сестринский</mark>
+              селектор, например,
+              <kbd>h1 + p {...;}</kbd>
+              и
+              <kbd>h1 ~ p {...;}</kbd>
+              ;
+            </li>
+            <li>
+              - селектор
+              <mark>атрибута</mark>
+              , например,
+              <kbd>img[alt] {...;}</kbd>
+            </li>
+            <li>
+              - селектор
+              <mark>псевдокласса</mark>
+              , например,
+              <kbd>a:link {...;}</kbd>
+            </li>
+            <li>
+              - селектор
+              <mark>структурных псевдоклассов</mark>
+              , например,
+              <kbd>:nth-child(odd) {...;}</kbd>
+            </li>
+            <li>
+              - селектор
+              <mark>структурных псевдоклассов типа</mark>
+              , например,
+              <kbd>:nth-of-type() {...;}</kbd>
+            </li>
+            <li>
+              - селектор
+              <mark>псевдоэлемента</mark>
+              , например,
+              <kbd>:before {...;}</kbd>
+            </li>
+            <li>
+              <a href="https://html5book.ru/osnovy-css/#part2" target="_blank">
+                Виды селекторов. © HTML5BOOK.RU
+              </a>
+            </li>
+            <li>
+              - самый высокий приоритет имеет атрибут
+              <mark>style</mark>
+              . Это правило перекрывает все селекторы описанные в стилях
+            </li>
+            <li>
+              - второе место занимает присутствие
+              <mark>ID</mark>
+              в селекторе, например,
+              <kbd>#some-id</kbd>
+            </li>
+            <li>
+              - далее идут все атрибуты (в том числе и атрибут
+              <mark>class</mark>
+              ) и псевдоклассы (
+              <mark>pseudo-classes</mark>
+              ) в селекторе
+            </li>
+            <li>
+              - самый низкий приоритет у селекторов с именами элементов и
+              псевдоэлементами (
+              <mark>pseudo-elements</mark>
+              )
+            </li>
+            <li>
+              <a
+                href="http://www.quizful.net/post/specificity-of-css-selectors"
+                target="_blank"
+              >
+                Приоритетность селекторов в CSS. © quizful
+              </a>
+            </li>
+          </ul>
+        </div>
+      </details>
 
-    <details>
-      <summary>7. Какие есть виды селекторов и их приоритетность?</summary>
-      <div class="answer">
-        <span>Ответ:</span>
-        <ul class="answer__list">
-          <li>
-            -
-            <mark>универсальный</mark>
-            селектор, например,
-            <kbd>* {...;}</kbd>
-          </li>
-          <li>
-            - селектор
-            <mark>элемента</mark>
-            , например,
-            <kbd>h1 {...;}</kbd>
-            ;
-          </li>
-          <li>
-            - селектор
-            <mark>класса</mark>
-            , например,
-            <kbd>.headline {...;}</kbd>
-          </li>
-          <li>
-            - селектор
-            <mark>идентификатора</mark>
-            , например,
-            <kbd>#sidebar {...;}</kbd>
-          </li>
-          <li>
-            - селектор
-            <mark>потомка</mark>
-            , например,
-            <kbd>ul li {...;}</kbd>
-          </li>
-          <li>
-            -
-            <mark>дочерний</mark>
-            селектор, например,
-            <kbd>p > strong {...;}</kbd>
-          </li>
-          <li>
-            -
-            <mark>сестринский</mark>
-            селектор, например,
-            <kbd>h1 + p {...;}</kbd>
-            и
-            <kbd>h1 ~ p {...;}</kbd>
-            ;
-          </li>
-          <li>
-            - селектор
-            <mark>атрибута</mark>
-            , например,
-            <kbd>img[alt] {...;}</kbd>
-          </li>
-          <li>
-            - селектор
-            <mark>псевдокласса</mark>
-            , например,
-            <kbd>a:link {...;}</kbd>
-          </li>
-          <li>
-            - селектор
-            <mark>структурных псевдоклассов</mark>
-            , например,
-            <kbd>:nth-child(odd) {...;}</kbd>
-          </li>
-          <li>
-            - селектор
-            <mark>структурных псевдоклассов типа</mark>
-            , например,
-            <kbd>:nth-of-type() {...;}</kbd>
-          </li>
-          <li>
-            - селектор
-            <mark>псевдоэлемента</mark>
-            , например,
-            <kbd>:before {...;}</kbd>
-          </li>
-          <li>
-            <a href="https://html5book.ru/osnovy-css/#part2" target="_blank">
-              Виды селекторов. © HTML5BOOK.RU
-            </a>
-          </li>
-          <li>
-            - самый высокий приоритет имеет атрибут
-            <mark>style</mark>
-            . Это правило перекрывает все селекторы описанные в стилях
-          </li>
-          <li>
-            - второе место занимает присутствие
-            <mark>ID</mark>
-            в селекторе, например,
-            <kbd>#some-id</kbd>
-          </li>
-          <li>
-            - далее идут все атрибуты (в том числе и атрибут
-            <mark>class</mark>
-            ) и псевдоклассы (
-            <mark>pseudo-classes</mark>
-            ) в селекторе
-          </li>
-          <li>
-            - самый низкий приоритет у селекторов с именами элементов и
-            псевдоэлементами (
-            <mark>pseudo-elements</mark>
-            )
-          </li>
-          <li>
-            <a href="http://www.quizful.net/post/specificity-of-css-selectors" target="_blank">
-              Приоритетность селекторов в CSS. © quizful
-            </a>
-          </li>
-        </ul>
-      </div>
-    </details>
+      <details open>
+        <summary>8. Как подключить свой шрифт на страницу?</summary>
+        <div class="answer">
+          <span>Ответ:</span>
+          <ul class="answer__list">
+            <li>
+              - через HTML с помощью элемента
+              <kbd>&lt;link&gt;</kbd>
+              в
+              <kbd>&lt;head&gt;</kbd>
+              документа
+            </li>
+            <li>
+              - через CSS с помощью директив
+              <kbd>@import</kbd>
+              и
+              <kbd>@font-face</kbd>
+            </li>
+            <li>
+              <a
+                href="https://proverstka.com.ua/services/podklyuchenie-shrifta-k-html-stranice"
+                target="_blank"
+              >
+                Подключение шрифта к html странице. © ПРОВЁРСТКА
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.cat-in-web.ru/podklyuchenie-shriftov-v-css"
+                target="_blank"
+              >
+                Подключение шрифтов в CSS. © CAT.IN.WEB
+              </a>
+            </li>
+          </ul>
+        </div>
+      </details>
 
-    <details open>
-      <summary>8. Как подключить свой шрифт на страницу?</summary>
-      <div class="answer">
-        <span>Ответ:</span>
-        <ul class="answer__list">
-          <li>
-            - через HTML с помощью элемента
-            <kbd>&lt;link&gt;</kbd>
-            в
-            <kbd>&lt;head&gt;</kbd>
-            документа
-          </li>
-          <li>
-            - через CSS с помощью директив
-            <kbd>@import</kbd>
-            и
-            <kbd>@font-face</kbd>
-          </li>
-          <li>
-            <a href="https://proverstka.com.ua/services/podklyuchenie-shrifta-k-html-stranice" target="_blank">
-              Подключение шрифта к html странице. © ПРОВЁРСТКА
-            </a>
-          </li>
-          <li>
-            <a href="https://www.cat-in-web.ru/podklyuchenie-shriftov-v-css" target="_blank">
-              Подключение шрифтов в CSS. © CAT.IN.WEB
-            </a>
-          </li>
-        </ul>
-      </div>
-    </details>
+      <details>
+        <summary>9. Что такое GRID? Нарисовать сетку 3x3</summary>
+        <p>
+          Ответ:
+        </p>
+      </details>
 
-    <details>
-      <summary>9. Что такое GRID? Нарисовать сетку 3x3</summary>
-      <p>
-        Ответ:
-      </p>
-    </details>
+      <details>
+        <summary>
+          10. В чем отличие блочного и строчного элемента? Примеры блочных и
+          строчных элементов
+        </summary>
+        <p>
+          Ответ:
+        </p>
+      </details>
 
-    <details>
-      <summary>
-        10. В чем отличие блочного и строчного элемента? Примеры блочных и
-        строчных элементов
-      </summary>
-      <p>
-        Ответ:
-      </p>
-    </details>
+      <details>
+        <summary>
+          11. Свойство float. Какие есть с ним проблемы и как решаются?
+        </summary>
+        <p>
+          Ответ:
+        </p>
+      </details>
 
-    <details>
-      <summary>
-        11. Свойство float. Какие есть с ним проблемы и как решаются?
-      </summary>
-      <p>
-        Ответ:
-      </p>
-    </details>
+      <details>
+        <summary>
+          12. Adaptive (адаптивный) & Responsive (отзывчивый) layout (дизайн).
+          Особенности и отличия
+        </summary>
+        <p>
+          Ответ:
+        </p>
+      </details>
 
-    <details>
-      <summary>
-        12. Adaptive (адаптивный) & Responsive (отзывчивый) layout (дизайн).
-        Особенности и отличия
-      </summary>
-      <p>
-        Ответ:
-      </p>
-    </details>
+      <details>
+        <summary>
+          13. Как сделать сайт резиновым под все размеры устройств?
+          Использование rem em, vh vw, vmax vmin
+        </summary>
+        <p>
+          Ответ:
+        </p>
+      </details>
 
-    <details>
-      <summary>
-        13. Как сделать сайт резиновым под все размеры устройств?
-        Использование rem em, vh vw, vmax vmin
-      </summary>
-      <p>
-        Ответ:
-      </p>
-    </details>
+      <details>
+        <summary>
+          14. В чем разница между display: none и visibility: hidden?
+        </summary>
+        <p>
+          Ответ:
+        </p>
+      </details>
 
-    <details>
-      <summary>
-        14. В чем разница между display: none и visibility: hidden?
-      </summary>
-      <p>
-        Ответ:
-      </p>
-    </details>
+      <details>
+        <summary>15. @media в сss. Что это и как используется?</summary>
+        <p>
+          Ответ:
+        </p>
+      </details>
 
-    <details>
-      <summary>15. @media в сss. Что это и как используется?</summary>
-      <p>
-        Ответ:
-      </p>
-    </details>
+      <details>
+        <summary>
+          16. Использование различных стилей для устройств с различным размером
+          экрана: Min max width, screen, display, print, phone: landscape,
+          portrait
+        </summary>
+        <p>
+          Ответ:
+        </p>
+      </details>
 
-    <details>
-      <summary>
-        16. Использование различных стилей для устройств с различным размером
-        экрана: Min max width, screen, display, print, phone: landscape,
-        portrait
-      </summary>
-      <p>
-        Ответ:
-      </p>
-    </details>
+      <details>
+        <summary>17. Что такое SASS? Возможности и фишки</summary>
+        <p>
+          Ответ:
+        </p>
+      </details>
 
-    <details>
-      <summary>17. Что такое SASS? Возможности и фишки</summary>
-      <p>
-        Ответ:
-      </p>
-    </details>
+      <details>
+        <summary>18. Что такое @mixin?</summary>
+        <p>
+          Ответ:
+        </p>
+      </details>
 
-    <details>
-      <summary>18. Что такое @mixin?</summary>
-      <p>
-        Ответ:
-      </p>
-    </details>
+      <details>
+        <summary>19. Как подключить .css файл в .html?</summary>
+        <p>
+          Ответ:
+        </p>
+      </details>
 
-    <details>
-      <summary>19. Как подключить .css файл в .html?</summary>
-      <p>
-        Ответ:
-      </p>
-    </details>
+      <details>
+        <summary>20. Схлопывание margin. Что это и как избежать?</summary>
+        <p>
+          Ответ:
+        </p>
+      </details>
 
-    <details>
-      <summary>20. Схлопывание margin. Что это и как избежать?</summary>
-      <p>
-        Ответ:
-      </p>
-    </details>
+      <details>
+        <summary>
+          21. Как сделать так, что бы border учитывался в заданной ширине
+          элемента?
+        </summary>
+        <p>
+          Ответ:
+        </p>
+      </details>
 
-    <details>
-      <summary>
-        21. Как сделать так, что бы border учитывался в заданной ширине
-        элемента?
-      </summary>
-      <p>
-        Ответ:
-      </p>
-    </details>
+      <details>
+        <summary>
+          22. Семантическая верстка. Что это и зачем? Способы семантической
+          верстки
+        </summary>
+        <div class="answer">
+          <span>Ответ:</span>
+          <ul class="answer__list">
+            <li>
+              <mark>Семантическая вёрстка</mark>
+              , или
+              <mark>семантический HTML-код</mark>
+              , — это подход к созданию веб-страниц на языке HTML, основанный на
+              использовании HTML-тегов в соответствии с их семантикой, а также
+              предполагающий логичную и последовательную иерархию страницы
+            </li>
+            <li>
+              <mark>Семантическая вёрстка</mark>
+              и разметка позволяет более точно определять значимость отдельных
+              элементов веб-страницы и всего текста в целом Поэтому, прежде
+              всего –
+              <mark>семантическая вёрстка нужна</mark>
+              для улучшения робото-функционала сайта и, как следствие – лучшей
+              его поисковой индексации
+            </li>
+            <li>
+              <a
+                href="http://tehnopost.info/html/74-html5-semanticheskaya-razmetka-sayta.html"
+                target="_blank"
+              >
+                HTML5 | Семантическая разметка сайта. © tehnopost.info
+              </a>
+            </li>
+            <li>
+              Для получения
+              <mark>семантической верстки</mark>
+              необходимо:
+            </li>
+            <li>
+              - на одной HTML странице подключать только один CSS файл и один JS
+              файл
+            </li>
+            <li>
+              - как можно больше все выносить в CSS стили, а JS код в отдельный
+              файл
+            </li>
+            <li>
+              - при создании меню лучше всего использовать
+              <kbd>&lt;ul&gt;</kbd>
+              список, внутри которого будут лежать
+              <kbd>&lt;li&gt;</kbd>
+              элементы меню. Этим мы показываем, что ссылки равносильные. Если
+              имеются пункты второй вложенности, соответственно создаем внутри
+              первичного
+              <kbd>&lt;li&gt;</kbd>
+              элемента еще один
+              <kbd>&lt;ul&gt;</kbd>
+              список
+            </li>
+            <li>
+              - заголовки выделять тегами
+              <kbd>&lt;h1&gt;</kbd>
+              ,
+              <kbd>&lt;h2&gt;</kbd>
+              ,
+              <kbd>&lt;h3&gt;</kbd>
+              ,
+              <kbd>&lt;h4&gt;</kbd>
+              , но никак не
+              <kbd>&lt;b&gt;</kbd>
+              и
+              <kbd>&lt;strong&gt;</kbd>
+            </li>
+            <li>
+              - все служебные картинки (иконки, стрелки, пульки…) прописывать в
+              CSS коде. В HTML, тег
+              <kbd>&lt;img&gt;</kbd>
+              должен использоваться только для больших картинок. Большие,
+              понятие растяжимое, скажем так, начиная с превьюшек 100 x 100 и
+              выше
+            </li>
+            <li>
+              - параграф блока текста создавать с помощью
+              <kbd>&lt;p&gt;</kbd>
+              тега, но никак не
+              <kbd>&lt;div&gt;</kbd>
+            </li>
+            <li>
+              - не использовать атрибуты
+              <kbd>&lt;style&gt;</kbd>
+              внутри HTML тега. Все стили выносить в отдельный CSS файл. То же
+              самое по поводу JavaScript
+            </li>
+            <li>
+              - соблюдать иерархию и логику документа. Более важные элементы
+              страницы должны стоять в начале HTML кода, менее в конце. С
+              помощью CSS стилей и
+              <kbd>&lt;div&gt;</kbd>
+              блоков, этого достичь не сложно, при любой схеме шаблона.
+            </li>
+            <li>
+              <a
+                href="https://sitear.ru/material/semanticheskaya-verstka-semanticheskogo-koda"
+                target="_blank"
+              >
+                Семантическая верстка: понятие и примеры семантического кода. ©
+                SiteAR
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.cat-in-web.ru/podklyuchenie-shriftov-v-css"
+                target="_blank"
+              >
+                Секреты использования семантической верстки в HTML5. © Medium
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://html5book.ru/html5-semantic-elements- "
+                target="_blank"
+              >
+                Семантические элементы HTML5. © HTML5BOOK.RU
+              </a>
+            </li>
+          </ul>
+        </div>
+      </details>
 
-    <details>
-      <summary>
-        22. Семантическая верстка. Что это и зачем? Способы семантической
-        верстки
-      </summary>
-      <div class="answer">
-        <span>Ответ:</span>
-        <ul class="answer__list">
-          <li>
-            <mark>Семантическая вёрстка</mark>
-            , или
-            <mark>семантический HTML-код</mark>
-            , — это подход к созданию веб-страниц на языке HTML, основанный на
-            использовании HTML-тегов в соответствии с их семантикой, а также
-            предполагающий логичную и последовательную иерархию страницы
-          </li>
-          <li>
-            <mark>Семантическая вёрстка</mark>
-            и разметка позволяет более точно определять значимость отдельных
-            элементов веб-страницы и всего текста в целом Поэтому, прежде
-            всего –
-            <mark>семантическая вёрстка нужна</mark>
-            для улучшения робото-функционала сайта и, как следствие – лучшей
-            его поисковой индексации
-          </li>
-          <li>
-            <a href="http://tehnopost.info/html/74-html5-semanticheskaya-razmetka-sayta.html" target="_blank">
-              HTML5 | Семантическая разметка сайта. © tehnopost.info
-            </a>
-          </li>
-          <li>
-            Для получения
-            <mark>семантической верстки</mark>
-            необходимо:
-          </li>
-          <li>
-            - на одной HTML странице подключать только один CSS файл и один JS
-            файл
-          </li>
-          <li>
-            - как можно больше все выносить в CSS стили, а JS код в отдельный
-            файл
-          </li>
-          <li>
-            - при создании меню лучше всего использовать
-            <kbd>&lt;ul&gt;</kbd>
-            список, внутри которого будут лежать
-            <kbd>&lt;li&gt;</kbd>
-            элементы меню. Этим мы показываем, что ссылки равносильные. Если
-            имеются пункты второй вложенности, соответственно создаем внутри
-            первичного
-            <kbd>&lt;li&gt;</kbd>
-            элемента еще один
-            <kbd>&lt;ul&gt;</kbd>
-            список
-          </li>
-          <li>
-            - заголовки выделять тегами
-            <kbd>&lt;h1&gt;</kbd>
-            ,
-            <kbd>&lt;h2&gt;</kbd>
-            ,
-            <kbd>&lt;h3&gt;</kbd>
-            ,
-            <kbd>&lt;h4&gt;</kbd>
-            , но никак не
-            <kbd>&lt;b&gt;</kbd>
-            и
-            <kbd>&lt;strong&gt;</kbd>
-          </li>
-          <li>
-            - все служебные картинки (иконки, стрелки, пульки…) прописывать в
-            CSS коде. В HTML, тег
-            <kbd>&lt;img&gt;</kbd>
-            должен использоваться только для больших картинок. Большие,
-            понятие растяжимое, скажем так, начиная с превьюшек 100 x 100 и
-            выше
-          </li>
-          <li>
-            - параграф блока текста создавать с помощью
-            <kbd>&lt;p&gt;</kbd>
-            тега, но никак не
-            <kbd>&lt;div&gt;</kbd>
-          </li>
-          <li>
-            - не использовать атрибуты
-            <kbd>&lt;style&gt;</kbd>
-            внутри HTML тега. Все стили выносить в отдельный CSS файл. То же
-            самое по поводу JavaScript
-          </li>
-          <li>
-            - соблюдать иерархию и логику документа. Более важные элементы
-            страницы должны стоять в начале HTML кода, менее в конце. С
-            помощью CSS стилей и
-            <kbd>&lt;div&gt;</kbd>
-            блоков, этого достичь не сложно, при любой схеме шаблона.
-          </li>
-          <li>
-            <a href="https://sitear.ru/material/semanticheskaya-verstka-semanticheskogo-koda" target="_blank">
-              Семантическая верстка: понятие и примеры семантического кода. ©
-              SiteAR
-            </a>
-          </li>
-          <li>
-            <a href="https://www.cat-in-web.ru/podklyuchenie-shriftov-v-css" target="_blank">
-              Секреты использования семантической верстки в HTML5. © Medium
-            </a>
-          </li>
-          <li>
-            <a href="https://html5book.ru/html5-semantic-elements- " target="_blank">
-              Семантические элементы HTML5. © HTML5BOOK.RU
-            </a>
-          </li>
-        </ul>
-      </div>
-    </details>
+      <details>
+        <summary>23. Что такое поток?</summary>
+        <div class="answer">
+          <span>Ответ:</span>
+          <ul class="answer__list">
+            <li>
+              Любой HTML документ отображается в браузере пользователя в
+              соответствии с определенными правилами. На эти правила влияют
+              последовательность элементов в коде страницы и свойства этих
+              элементов. На основе эти правил браузер последовательно и
+              методично выводит каждый элемент документа. Порядок отображения
+              элементов на странице и называют
+              <mark>потоком</mark>
+            </li>
+            <li>
+              -
+              <mark>нормальный</mark>
+              поток (
+              <mark>normal</mark>
+              flow)
+            </li>
+            <li>
+              -
+              <mark>плавающий</mark>
+              поток (
+              <mark>float</mark>
+              flow)
+            </li>
+            <li>
+              -
+              <mark>абсолютное позиционирование</mark>
+              (
+              <mark>absolute positioning</mark>
+              )
+            </li>
+            <li>
+              <a href="http://webdesignstudio1.net/flows.html" target="_blank">
+                Потоки HTML документа. © WebDesignStudio.net
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://webref.ru/course/positioning/flow"
+                target="_blank"
+              >
+                Поток. © WebReference
+              </a>
+            </li>
+          </ul>
+        </div>
+      </details>
+    </section>
 
-    <details>
-      <summary>23. Что такое поток?</summary>
-      <div class="answer">
-        <span>Ответ:</span>
-        <ul class="answer__list">
-          <li>
-            Любой HTML документ отображается в браузере пользователя в
-            соответствии с определенными правилами. На эти правила влияют
-            последовательность элементов в коде страницы и свойства этих
-            элементов. На основе эти правил браузер последовательно и
-            методично выводит каждый элемент документа. Порядок отображения
-            элементов на странице и называют
-            <mark>потоком</mark>
-          </li>
-          <li>
-            -
-            <mark>нормальный</mark>
-            поток (
-            <mark>normal</mark>
-            flow)
-          </li>
-          <li>
-            -
-            <mark>плавающий</mark>
-            поток (
-            <mark>float</mark>
-            flow)
-          </li>
-          <li>
-            -
-            <mark>абсолютное позиционирование</mark>
-            (
-            <mark>absolute positioning</mark>
-            )
-          </li>
-          <li>
-            <a href="http://webdesignstudio1.net/flows.html" target="_blank">
-              Потоки HTML документа. © WebDesignStudio.net
-            </a>
-          </li>
-          <li>
-            <a href="https://webref.ru/course/positioning/flow" target="_blank">
-              Поток. © WebReference
-            </a>
-          </li>
-        </ul>
-      </div>
-    </details>
-  </section>
+    <section>
+      <h2>JavaScript:</h2>
+      <details>
+        <summary>
+          1. Что такое SetTimeout() и SetInterval()? Как это отменить?
+        </summary>
+        <p>
+          Ответ:
+        </p>
+      </details>
 
-  <section>
-    <h2>JavaScript:</h2>
-    <details>
-      <summary>
-        1. Что такое SetTimeout() и SetInterval()? Как это отменить?
-      </summary>
-      <p>
-        Ответ:
-      </p>
-    </details>
+      <details>
+        <summary>2. Отличие "==" и "==="?</summary>
+        <p>
+          Ответ:
+        </p>
+      </details>
 
-    <details>
-      <summary>2. Отличие "==" и "==="?</summary>
-      <p>
-        Ответ:
-      </p>
-    </details>
+      <details>
+        <summary>
+          3. Основные фишки ES6 (let, const; arrow functions; Promise;
+          Spread/Rest; Строковые шаблоны и разделители ${ ... } ` ... `; for ...
+          of vs for ... in. Классы в ES6, extends и super в классах
+        </summary>
+        <p>
+          Ответ:
+        </p>
+      </details>
 
-    <details>
-      <summary>
-        3. Основные фишки ES6 (let, const; arrow functions; Promise;
-        Spread/Rest; Строковые шаблоны и разделители ${ ... } ` ... `; for ...
-        of vs for ... in. Классы в ES6, extends и super в классах
-      </summary>
-      <p>
-        Ответ:
-      </p>
-    </details>
+      <details>
+        <summary>
+          4. Объявление функций: Function Declaration & Function Expression.
+          Отличия
+        </summary>
+        <p>
+          Ответ:
+        </p>
+      </details>
 
-    <details>
-      <summary>
-        4. Объявление функций: Function Declaration & Function Expression.
-        Отличия
-      </summary>
-      <p>
-        Ответ:
-      </p>
-    </details>
+      <details>
+        <summary>5. Аргументы и Параметры функции</summary>
+        <p>
+          Ответ:
+        </p>
+      </details>
 
-    <details>
-      <summary>5. Аргументы и Параметры функции</summary>
-      <p>
-        Ответ:
-      </p>
-    </details>
+      <details>
+        <summary>6. Аргументы при вызове функции</summary>
+        <p>
+          Ответ:
+        </p>
+      </details>
 
-    <details>
-      <summary>6. Аргументы при вызове функции</summary>
-      <p>
-        Ответ:
-      </p>
-    </details>
+      <details>
+        <summary>7. Параметры в теле функции</summary>
+        <p>
+          Ответ:
+        </p>
+      </details>
 
-    <details>
-      <summary>7. Параметры в теле функции</summary>
-      <p>
-        Ответ:
-      </p>
-    </details>
+      <details>
+        <summary>
+          8. Что такое наследование? Написать пример наследования
+        </summary>
+        <p>
+          Ответ:
+        </p>
+      </details>
 
-    <details>
-      <summary>
-        8. Что такое наследование? Написать пример наследования
-      </summary>
-      <p>
-        Ответ:
-      </p>
-    </details>
+      <details>
+        <summary>9. Всплытие и перехват события (bubbling & capturing)</summary>
+        <p>
+          Ответ:
+        </p>
+      </details>
 
-    <details>
-      <summary>9. Всплытие и перехват события (bubbling & capturing)</summary>
-      <p>
-        Ответ:
-      </p>
-    </details>
+      <details>
+        <summary>10. Call, apply, bind</summary>
+        <p>
+          Ответ:
+        </p>
+      </details>
 
-    <details>
-      <summary>10. Call, apply, bind</summary>
-      <p>
-        Ответ:
-      </p>
-    </details>
+      <details>
+        <summary>11. Типы данных JS</summary>
+        <p>
+          Ответ:
+        </p>
+      </details>
 
-    <details>
-      <summary>11. Типы данных JS</summary>
-      <p>
-        Ответ:
-      </p>
-    </details>
+      <details>
+        <summary>12. Способы клонирования объекта</summary>
+        <p>
+          Ответ:
+        </p>
+      </details>
 
-    <details>
-      <summary>12. Способы клонирования объекта</summary>
-      <p>
-        Ответ:
-      </p>
-    </details>
+      <details>
+        <summary>13. Scope (область видимости функции)</summary>
+        <p>
+          Ответ:
+        </p>
+      </details>
 
-    <details>
-      <summary>13. Scope (область видимости функции)</summary>
-      <p>
-        Ответ:
-      </p>
-    </details>
+      <details>
+        <summary>14. Виды сортировок. Написать пару примеров.</summary>
+        <p>
+          Ответ: Сортировка пузырьком, быстрая сортировка, сортировка слиянием,
+          сортировка выбором, сортировка вставками
+        </p>
+      </details>
 
-    <details>
-      <summary>14. Виды сортировок. Написать пару примеров.</summary>
-      <p>
-        Ответ: Сортировка пузырьком, быстрая сортировка, сортировка слиянием,
-        сортировка выбором, сортировка вставками
-      </p>
-    </details>
+      <details>
+        <summary>
+          15. Что такое "event.preventDefault" и "event.stopPropagation"?
+          Разница между ними.
+        </summary>
+        <p>
+          Ответ:
+        </p>
+      </details>
 
-    <details>
-      <summary>
-        15. Что такое "event.preventDefault" и "event.stopPropagation"?
-        Разница между ними.
-      </summary>
-      <p>
-        Ответ:
-      </p>
-    </details>
+      <details>
+        <summary>
+          16. Что такое обработчик событий. Способы добавления и удаления
+          обработчика событий на элемент
+        </summary>
+        <p>
+          Ответ:
+        </p>
+      </details>
 
-    <details>
-      <summary>
-        16. Что такое обработчик событий. Способы добавления и удаления
-        обработчика событий на элемент
-      </summary>
-      <p>
-        Ответ:
-      </p>
-    </details>
+      <details>
+        <summary>17. Что такое async?</summary>
+        <p>
+          Ответ:
+        </p>
+      </details>
 
-    <details>
-      <summary>17. Что такое async?</summary>
-      <p>
-        Ответ:
-      </p>
-    </details>
+      <details>
+        <summary>18. "proto" и "prototype". Цепочка прототипов</summary>
+        <p>
+          Ответ:
+        </p>
+      </details>
 
-    <details>
-      <summary>18. "proto" и "prototype". Цепочка прототипов</summary>
-      <p>
-        Ответ:
-      </p>
-    </details>
+      <details>
+        <summary>19. Промисы. Объект Promise. Его состояния и методы</summary>
+        <p>
+          Ответ:
+        </p>
+      </details>
 
-    <details>
-      <summary>19. Промисы. Объект Promise. Его состояния и методы</summary>
-      <p>
-        Ответ:
-      </p>
-    </details>
+      <details>
+        <summary>20. Что такое замыкание?</summary>
+        <p>
+          Ответ:
+        </p>
+      </details>
 
-    <details>
-      <summary>20. Что такое замыкание?</summary>
-      <p>
-        Ответ:
-      </p>
-    </details>
+      <details>
+        <summary>
+          21. Принципы ООП: наследование, инкапсуляция, полиморфизм
+        </summary>
+        <p>
+          Ответ:
+        </p>
+      </details>
 
-    <details>
-      <summary>
-        21. Принципы ООП: наследование, инкапсуляция, полиморфизм
-      </summary>
-      <p>
-        Ответ:
-      </p>
-    </details>
+      <details>
+        <summary>
+          22. Основные паттерны проектирования (Singleton, Module, Prototype,
+          Factory, MVC, ...), лучшие практики программирования
+        </summary>
+        <p>
+          Ответ:
+        </p>
+      </details>
 
-    <details>
-      <summary>
-        22. Основные паттерны проектирования (Singleton, Module, Prototype,
-        Factory, MVC, ...), лучшие практики программирования
-      </summary>
-      <p>
-        Ответ:
-      </p>
-    </details>
+      <details>
+        <summary>
+          23. Что такое Object.create()? Написать свой Object.create()
+        </summary>
+        <p>
+          Ответ:
+        </p>
+      </details>
 
-    <details>
-      <summary>
-        23. Что такое Object.create()? Написать свой Object.create()
-      </summary>
-      <p>
-        Ответ:
-      </p>
-    </details>
+      <details>
+        <summary>24. Event loop (Callback Queue, CallStack)</summary>
+        <p>
+          Ответ:
+        </p>
+      </details>
 
-    <details>
-      <summary>24. Event loop (Callback Queue, CallStack)</summary>
-      <p>
-        Ответ:
-      </p>
-    </details>
+      <details>
+        <summary>25. Режим 'use strict'</summary>
+        <p>
+          Ответ:
+        </p>
+      </details>
 
-    <details>
-      <summary>25. Режим 'use strict'</summary>
-      <p>
-        Ответ:
-      </p>
-    </details>
+      <details>
+        <summary>
+          26. Структуры данных: бинарное дерево, односвязный и двусвязный
+          список, стек, очередь
+        </summary>
+        <p>
+          Ответ:
+        </p>
+      </details>
 
-    <details>
-      <summary>
-        26. Структуры данных: бинарное дерево, односвязный и двусвязный
-        список, стек, очередь
-      </summary>
-      <p>
-        Ответ:
-      </p>
-    </details>
+      <details>
+        <summary>
+          27. Что такое local storage, session storage и cookie?
+        </summary>
+        <p>
+          Ответ:
+        </p>
+      </details>
 
-    <details>
-      <summary>
-        27. Что такое local storage, session storage и cookie?
-      </summary>
-      <p>
-        Ответ:
-      </p>
-    </details>
-
-    <details>
-      <summary>28. Как работает браузер?</summary>
-      <p>
-        Ответ:
-      </p>
-    </details>
-  </section>
-</body>
-
+      <details>
+        <summary>28. Как работает браузер?</summary>
+        <p>
+          Ответ:
+        </p>
+      </details>
+    </section>
+  </body>
 </html>
