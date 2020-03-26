@@ -132,13 +132,13 @@ section details .answer .answer__list li a:active {
 section details .answer .answer__list li a:after {
   position: absolute;
   content: '';
-  left: 0;
+  right: 0;
   bottom: -2px;
   width: 100%;
   height: 2px;
   background-color: rgba(0, 0, 0, 0.2);
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
   -webkit-transform: scaleX(1);
           transform: scaleX(1);
 }
@@ -147,24 +147,23 @@ section details .answer .answer__list li a:before {
   position: absolute;
   content: '';
   left: 0;
-  bottom: -2px;
-  width: 100%;
+  bottom: -4px;
+  width: 0;
   height: 2px;
   background-color: #19d4ee;
-  -webkit-transition: 0.3s ease-in-out;
-  transition: 0.3s ease-in-out;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-}
-
-section details .answer .answer__list li a:hover::before {
-  -webkit-transform: scaleX(1);
-          transform: scaleX(1);
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  /* transform: scaleX(0); */
 }
 
 section details .answer .answer__list li a:hover::after {
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
+  /* transform: scaleX(0); */
+  width: 0;
+}
+
+section details .answer .answer__list li a:hover::before {
+  /* transform: scaleX(1); */
+  width: 100%;
 }
 
 details[open] summary::before {
