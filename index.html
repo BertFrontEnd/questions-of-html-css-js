@@ -516,27 +516,27 @@
                 href="http://www.quizful.net/post/specificity-of-css-selectors"
                 target="_blank"
               >
-                Приоритетность селекторов в CSS. © quizful
+                Приоритетность селекторов в CSS. © <em>quizful</em>
               </a>
             </li>
           </ul>
         </div>
       </details>
 
-      <details open>
+      <details>
         <summary>8. Как подключить свой шрифт на страницу?</summary>
         <div class="answer">
           <span>Ответ:</span>
           <ul class="answer__list">
             <li>
-              - через HTML с помощью элемента
+               - через HTML с помощью элемента
               <kbd>&lt;link&gt;</kbd>
               в
               <kbd>&lt;head&gt;</kbd>
               документа
             </li>
             <li>
-              - через CSS с помощью директив
+               - через CSS с помощью директив
               <kbd>@import</kbd>
               и
               <kbd>@font-face</kbd>
@@ -562,10 +562,26 @@
       </details>
 
       <details>
-        <summary>9. Что такое GRID? Нарисовать сетку 3x3</summary>
-        <p>
-          Ответ:
-        </p>
+        <summary>9. Что такое Grid? Нарисовать сетку 3x3</summary>
+        <div class="answer">
+          <span>Ответ:</span>
+          <ul class="answer__list">
+            <li>
+              <mark>Grid</mark>, иначе <mark>CSS Grid Layout</mark> представляет
+              собой пересекающийся набор горизонтальных и вертикальных линий -
+              один набор определяет столбцы, а другой строки. Элементы могут
+              быть помещены в сетку, соответственно строкам и столбцам
+            </li>
+            <li>
+              <a
+                href="https://habr.com/ru/company/edison/blog/343614"
+                target="_blank"
+              >
+                Учим CSS Grid за 5 минут. © Хабр
+              </a>
+            </li>
+          </ul>
+        </div>
       </details>
 
       <details>
@@ -573,103 +589,416 @@
           10. В чем отличие блочного и строчного элемента? Примеры блочных и
           строчных элементов
         </summary>
-        <p>
-          Ответ:
-        </p>
+        <div class="answer">
+          <span>Ответ:</span>
+          <ul class="answer__list">
+            <li>
+              <mark>Блочные элементы</mark> являются основой, которая
+              используется для верстки веб-страниц. Такой элемент представляет
+              собой прямоугольник, который по умолчанию занимает всю доступную
+              ширину страницы (если иное значение не указано в CSS), а длина
+              элемента зависит от его содержимого. Такой элемент всегда
+              начинается с новой строки, то есть, располагается под предыдущим
+              элементом. Блочный элемент может содержать в себе другие блочные и
+              строчные элементы. Примеры <mark>блочных элементов</mark>:
+              <kbd>&lt;div&gt;</kbd>, <kbd>&lt;p&gt;</kbd>,
+              <kbd>&lt;ul&gt;</kbd>, <kbd>&lt;ol&gt;</kbd>,
+              <kbd>&lt;h1&gt;</kbd> и т. д.
+            </li>
+            <li>
+              В отличие от блочного, <mark>строчный элемент</mark> не
+              переносится на новую строку, а располагается на той же строке, что
+              и предыдущий элемент. Такие элементы, как правило, находятся
+              внутри блочных элементов и их ширина зависит лишь от содержимого и
+              настроек CSS. Еще одно отличие строчного элемента от блочного
+              заключается к том, что в нем может находиться только контент и
+              другие строчные элементы. Блочные элементы в строчные вкладывать
+              нельзя. Примеры <mark>строчных элементов</mark>:
+              <kbd>&lt;a&gt;</kbd>, <kbd>&lt;span&gt;</kbd>,
+              <kbd>&lt;strong&gt;</kbd>, <kbd>&lt;em&gt;</kbd>,
+              <kbd>&lt;img&gt;</kbd> и т. д.
+            </li>
+            <li>
+              <a
+                href="https://idg.net.ua/blog/uchebnik-css/ispolzovanie-css/block-i-inline"
+                target="_blank"
+              >
+                Блочные и строчные элементы. © INDIGO
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://html5book.ru/block-inline-elements"
+                target="_blank"
+              >
+                Блочные и строчные элементы. © HTML5BOOK.RU
+              </a>
+            </li>
+          </ul>
+        </div>
       </details>
 
       <details>
         <summary>
           11. Свойство float. Какие есть с ним проблемы и как решаются?
         </summary>
-        <p>
-          Ответ:
-        </p>
+        <div class="answer">
+          <span>Ответ:</span>
+          <ul class="answer__list">
+            <li>
+              <mark>Float</mark> — это условно коробка, которая двигается вправо
+              или влево по текущей линии. Наиболее интересная характеристика
+              float в том, что контент может обтекать вдоль его стороны. При
+              применении свойства float: left, контент будет обтекать коробку
+              вниз с правой стороны и аналогично при <kbd>float: right</kbd> -
+              вниз с левой стороны
+            </li>
+            <li>
+              <a
+                href="http://www.css-tricks.ru/articles/css/all-about-floats"
+                target="_blank"
+              >
+                Всё о свойстве float. © CSS<em>tricks</em>
+              </a>
+            </li>
+            <li>
+              <a href="https://habr.com/ru/post/142486" target="_blank">
+                Подробно о свойстве float. © Хабр
+              </a>
+            </li>
+            <li>
+              <a href="http://www.quizful.net/post/css-floats" target="_blank">
+                CSS: свойство float. © <em>quizful</em>
+              </a>
+            </li>
+            <li>
+              <mark>Проблема 1:</mark> обтекание влияет на другие элементы
+            </li>
+            <li>
+              <mark>Проблема 2:</mark> нулевая высота контейнера с
+              float-элементами
+            </li>
+            <li>
+              <mark>Проблема 3:</mark> перенос блоков при добавлении отступов
+            </li>
+            <li>
+              <a
+                href="https://idg.net.ua/blog/uchebnik-css/razmetka-css/verstka-s-float/problemy"
+                target="_blank"
+              >
+                Проблемы float и их решения. © INDIGO
+              </a>
+            </li>
+          </ul>
+        </div>
       </details>
 
       <details>
         <summary>
-          12. Adaptive (адаптивный) & Responsive (отзывчивый) layout (дизайн).
+          12. Adaptive & Responsive layout — адаптивный и отзывчивый дизайн.
           Особенности и отличия
         </summary>
-        <p>
-          Ответ:
-        </p>
+        <div class="answer">
+          <span>Ответ:</span>
+          <ul class="answer__list">
+            <li>
+              <mark>Responsive Design (RWD) — отзывчивый дизайн</mark> —
+              проектирование сайта с определенными значениями свойств, например,
+              гибкая сетка макета, которые позволяют одному макету работать на
+              разных устройствах
+            </li>
+            <li>
+              <mark
+                >Adaptive Design (AWD) — адаптивный дизайн, или динамический
+                показ</mark
+              >
+              — проектирование сайта с условиями, которые изменяются в
+              зависимости от устройства, базируясь на нескольких макетах
+              фиксированной ширины
+            </li>
+            <li>
+              Для создания отзывчивых макетов используются медиазапросы и
+              относительные размеры элементов сетки, заданные с помощью
+              <kbd>%</kbd>. В адаптивном дизайне серверные скрипты сначала
+              определяют тип устройства, с помощью которого пользователь
+              пытается получить доступ к сайту (настольный ПК, телефон или
+              планшет), затем загружает именно ту версию страницы, которая
+              наиболее оптимизирована для него. Для элементов сетки задаются
+              фиксированные <kbd>px</kbd> размеры. Поэтому основное отличие
+              между этими приёмами — <mark>отзывчивый дизайн</mark> — один макет
+              для всех устройств, <mark>адаптивный дизайн</mark> — один макет
+              для каждого вида устройства.
+            </li>
+            <li>
+              <a
+                href="https://html5book.ru/otzyvchivyj-dizayn-saita"
+                target="_blank"
+              >
+                Отзывчивый и адаптивный дизайн сайта. © HTML5BOOK.RU
+              </a>
+            </li>
+          </ul>
+        </div>
       </details>
 
       <details>
         <summary>
-          13. Как сделать сайт резиновым под все размеры устройств?
+          13. Как сделать сайт резиновым/отзывчивым под все размеры устройств?
           Использование rem em, vh vw, vmax vmin
         </summary>
-        <p>
-          Ответ:
-        </p>
+        <div class="answer">
+          <span>Ответ:</span>
+          <ul class="answer__list">
+            <li>
+              Отзывчивый веб-дизайн разбивается на три основных компонента,
+              включая <mark>гибкие макеты</mark>, <mark>медиа-запросы</mark> и
+              <mark>гибкий медиа-контент</mark>. Первая часть, гибкие макеты —
+              это практика построения макета сайта с гибкой сеткой, которая
+              способна динамически уменьшать размер до любой ширины. Гибкие
+              сетки строятся с использованием относительных единиц длины, как
+              правило, <kbd>%</kbd> или единиц <kbd>em</kbd> / <kbd>rem</kbd> /
+              <kbd>vh</kbd> - <kbd>vw</kbd> / <kbd>vmax</kbd> - <kbd>vmin</kbd>.
+              Эти относительные длины затем применяются, чтобы объявить основные
+              значения свойств сетки, таких как <kbd>width</kbd>,
+              <kbd>margin</kbd> или <kbd>padding</kbd>.
+            </li>
+            <li>
+              <a
+                href="https://webref.ru/layout/advanced-html-css/responsive-web-design"
+                target="_blank"
+              >
+                Отзывчивый веб-дизайн. © WebReference
+              </a>
+            </li>
+            <li>
+              <a
+                href="http://site-on.net/create/html/7-responsive"
+                target="_blank"
+              >
+                Пошаговое руководство по созданию <s>адаптивного</s> отзывчивого
+                дизайна. © Site <em>on!</em>
+              </a>
+            </li>
+          </ul>
+        </div>
       </details>
 
       <details>
         <summary>
-          14. В чем разница между display: none и visibility: hidden?
+          14. В чем разница между <kbd>display: none</kbd> и
+          <kbd>visibility: hidden</kbd>?
         </summary>
-        <p>
-          Ответ:
-        </p>
+        <div class="answer">
+          <span>Ответ:</span>
+          <ul class="answer__list">
+            <li>
+              <kbd>visibility: hidden</kbd> – элемент остается в естественном
+              потоке документа
+            </li>
+            <li>
+              <kbd>display: none</kbd> – элемент удаляется из естественного
+              потока документа и окружающие его элементы html, схлопываясь,
+              заполняют образовавшееся пространство
+            </li>
+            <li>
+              <a href="http://dnzl.ru/view_post.php?id=175" target="_blank">
+                Visibility или Display в CSS. © DNZL.RU
+              </a>
+            </li>
+          </ul>
+        </div>
       </details>
 
       <details>
         <summary>15. @media в сss. Что это и как используется?</summary>
-        <p>
-          Ответ:
-        </p>
+        <div class="answer">
+          <span>Ответ:</span>
+          <ul class="answer__list">
+            <li>
+              В общем случае, <mark>медиа-запрос</mark>
+              <kbd>@media</kbd> состоит из ключевого слова, описывающего тип
+              устройства (необязательный параметр) и выражения, проверяющего
+              характеристики данного устройства. Из всех характеристик чаще
+              всего проверяется ширина устройства <kbd>width</kbd>. Медиа-запрос
+              является логическим выражением, которое возвращает истину или ложь
+            </li>
+
+            <li>
+              <a href="https://html5book.ru/css3-mediazaprosy" target="_blank">
+                CSS3-медиазапросы. © HTML5BOOK.RU
+              </a>
+            </li>
+          </ul>
+        </div>
       </details>
 
       <details>
         <summary>
           16. Использование различных стилей для устройств с различным размером
-          экрана: Min max width, screen, display, print, phone: landscape,
-          portrait
+          экрана: <kbd>min</kbd>, <kbd>max</kbd>, <kbd>width</kbd>, <kbd>screen</kbd>, <kbd>display</kbd>, <kbd>print</kbd>, phone: <kbd>landscape</kbd>,
+          <kbd>portrait</kbd>
         </summary>
-        <p>
-          Ответ:
-        </p>
+        <div class="answer">
+          <span>Ответ:</span>
+          <ul class="answer__list">
+            <li>
+              Все запросы начинаются с правила <kbd>@media</kbd>, после чего
+              следует условие, в котором используются
+              <mark>типы носителей</mark>, <mark>логические</mark>
+              <mark>операторы</mark> и <mark>медиа-функции</mark>
+            </li>
+            <li>
+              <a href="http://htmlbook.ru/css/value/media" target="_blank">
+                Медиа-запросы. © htmlbook.ru
+              </a>
+            </li>
+          </ul>
+        </div>
       </details>
 
       <details>
         <summary>17. Что такое SASS? Возможности и фишки</summary>
-        <p>
-          Ответ:
-        </p>
+        <div class="answer">
+          <span>Ответ:</span>
+          <ul class="answer__list">
+            <li>
+              <mark>Sass — Syntactically Awesome Stylesheets</mark> — это
+              скриптовый метаязык, разработанный для упрощения файлов CSS. Этот
+              модуль входит в Haml (HTML abstraction markup language), который
+              используется для упрощения HTML
+            </li>
+            <li>Основные <mark>преимущества</mark> Sass:</li>
+            <li> - использование переменных</li>
+            <li> - вложенные правила</li>
+            <li> - использование дополнений</li>
+            <li> - наследование</li>
+            <li>
+              <a
+                href="https://timeweb.com/ru/community/articles/chto-takoe-sass-1"
+                target="_blank"
+              >
+                Что такое Sass. © timeweb.com
+              </a>
+            </li>
+          </ul>
+        </div>
       </details>
 
       <details>
         <summary>18. Что такое @mixin?</summary>
-        <p>
-          Ответ:
-        </p>
+        <div class="answer">
+          <span>Ответ:</span>
+          <ul class="answer__list">
+            <li>
+              <kbd>@mixin</kbd>, иначе говоря, <mark>миксин</mark> или
+              <mark>примесь</mark> — это директива позволяющая создавать
+              переиспользуемые блоки CSS. Чтобы использовать миксин, его
+              необходимо подключить в Sass файле c помощью директивы
+              <kbd>@include</kbd>
+            </li>
+            <li>
+              <a
+                href="https://timeweb.com/ru/community/articles/chto-takoe-sass-1"
+                target="_blank"
+              >
+                Основы Sass. Миксины. © .getInstance
+              </a>
+            </li>
+          </ul>
+        </div>
       </details>
 
       <details>
         <summary>19. Как подключить .css файл в .html?</summary>
-        <p>
-          Ответ:
-        </p>
+        <div class="answer">
+          <span>Ответ:</span>
+          <ul class="answer__list">
+            <li>
+              - подключение CSS через внешний файл стилей тегом <kbd>link</kbd>
+            </li>
+            <li>- добавление CSS с помощью тега <kbd>style</kbd></li>
+            <li>- CSS стили для конкретного тега атрибутом <kbd>style</kbd></li>
+            <li>- стили CSS через JavaScript</li>
+            <li>
+              <a
+                href="https://guruweba.com/html/podklyuchenie-stiley-css-k-html-dokumentu-kak-podkuchit-css-fail"
+                target="_blank"
+              >
+                Подключение стилей CSS к HTML документу. Как подключить CSS
+                файл. © GuruWeba
+              </a>
+            </li>
+          </ul>
+        </div>
       </details>
 
       <details>
-        <summary>20. Схлопывание margin. Что это и как избежать?</summary>
-        <p>
-          Ответ:
-        </p>
+        <summary
+          >20. Схлопывание <kbd>margin</kbd>. Что это и как избежать?</summary
+        >
+        <div class="answer">
+          <span>Ответ:</span>
+          <ul class="answer__list">
+            <li>
+              Эффект схлопывания наблюдается, когда у блочных элементов
+              расположенных рядом друг с другом по вертикали, отступы не
+              суммируются, а объединяются между собой. Само схлопывание
+              действует на два и более блока (один может быть вложен внутрь
+              другого) с отступами сверху или снизу, при этом примыкающие
+              отступы комбинируются в один.
+              <mark
+                >Этот эффект работает только для блоков, у которых не заданы
+                поля и границы. Для отступов слева и справа схлопывание никогда
+                не применяется</mark
+              >
+              <li>Правила вычисления единого отступа меняются в зависимости от ряда условий:</li>
+            </li>
+            <li> - оба отступа положительны</li>
+            <li> - один из отступов отрицательный</li>
+            <li> - вложенные элементы</li>
+            <li>Схлопывание не срабатывает: </li>
+            <li> - для элементов, у которых установлено свойство <kbd>padding</kbd>.</li>
+            <li> - для элементов, у которых на стороне схлопывания задана граница;</li>
+            <li> - на элементах с абсолютным позиционированием, т.е. таких, у которых <kbd>position</kbd> установлено как <kbd>absolute</kbd>;</li>
+            <li> - на плавающих элементах (для них свойство <kbd>float</kbd> задано как <kbd>left</kbd> или <kbd>right</kbd>);</li>
+            <li> - для строчных элементов;</li><kbd></kbd>
+            <li> - для <kbd>&lt;html&gt;</kbd></li>
+            <li>Также схлопывание не срабатывает при соблюдении некоторых условий:</li>
+            <li> - для элементов, у которых значение <kbd>overflow</kbd> задано как <kbd>auto</kbd>, <kbd>hidden</kbd> или <kbd>scroll</kbd> схлопывание не действует для их дочерних элементов;</li>
+            <li> - у элементов, к которым применяется свойство <kbd>clear</kbd>, не схлопывается верхний отступ с нижним отступом родительского элемента.</li>
+            <li>
+              <a
+                href="http://htmlbook.ru/samlayout/blochnaya-verstka/skhlopyvayushchiesya-otstupy"
+                target="_blank"
+              >
+                Схлопывающиеся отступы. © htmlbook.ru
+              </a>
+            </li>
+          </ul>
+        </div>
       </details>
 
       <details>
         <summary>
-          21. Как сделать так, что бы border учитывался в заданной ширине
+          21. Как сделать так, что бы <kbd>border</kbd> учитывался в заданной ширине
           элемента?
         </summary>
-        <p>
-          Ответ:
-        </p>
+        <div class="answer">
+          <span>Ответ:</span>
+          <ul class="answer__list">
+            <li>
+              Чтобы браузер учитывал отступы и рамку, вычисляя ширину блока, используется свойство <kbd>box-sizing</kbd> со значением <kbd>border-box</kbd> — в данном случае браузер включает отступы <kbd>padding</kbd> и рамку <kbd>border</kbd> в общую ширину/высоту элемента.
+            </li>
+            <li>
+              <a
+                href="https://guruweba.com/html/podklyuchenie-stiley-css-k-html-dokumentu-kak-podkuchit-css-fail"
+                target="_blank"
+              >
+                Box-sizing: управляем вычислением ширины и высоты. © INDIGO
+              </a>
+            </li>
+          </ul>
+        </div>
       </details>
 
       <details>
@@ -786,7 +1115,7 @@
                 href="https://www.cat-in-web.ru/podklyuchenie-shriftov-v-css"
                 target="_blank"
               >
-                Секреты использования семантической верстки в HTML5. © Medium
+                Секреты использования семантической̆ верстки в HTML5. © Medium
               </a>
             </li>
             <li>
