@@ -529,14 +529,14 @@
           <span>Ответ:</span>
           <ul class="answer__list">
             <li>
-               - через HTML с помощью элемента
+              - через HTML с помощью элемента
               <kbd>&lt;link&gt;</kbd>
               в
               <kbd>&lt;head&gt;</kbd>
               документа
             </li>
             <li>
-               - через CSS с помощью директив
+              - через CSS с помощью директив
               <kbd>@import</kbd>
               и
               <kbd>@font-face</kbd>
@@ -835,7 +835,9 @@
       <details>
         <summary>
           16. Использование различных стилей для устройств с различным размером
-          экрана: <kbd>min</kbd>, <kbd>max</kbd>, <kbd>width</kbd>, <kbd>screen</kbd>, <kbd>display</kbd>, <kbd>print</kbd>, phone: <kbd>landscape</kbd>,
+          экрана: <kbd>min</kbd>, <kbd>max</kbd>, <kbd>width</kbd>,
+          <kbd>screen</kbd>, <kbd>display</kbd>, <kbd>print</kbd>, phone:
+          <kbd>landscape</kbd>,
           <kbd>portrait</kbd>
         </summary>
         <div class="answer">
@@ -868,10 +870,10 @@
               используется для упрощения HTML
             </li>
             <li>Основные <mark>преимущества</mark> Sass:</li>
-            <li> - использование переменных</li>
-            <li> - вложенные правила</li>
-            <li> - использование дополнений</li>
-            <li> - наследование</li>
+            <li>- использование переменных</li>
+            <li>- вложенные правила</li>
+            <li>- использование дополнений</li>
+            <li>- наследование</li>
             <li>
               <a
                 href="https://timeweb.com/ru/community/articles/chto-takoe-sass-1"
@@ -951,21 +953,48 @@
                 поля и границы. Для отступов слева и справа схлопывание никогда
                 не применяется</mark
               >
-              <li>Правила вычисления единого отступа меняются в зависимости от ряда условий:</li>
             </li>
-            <li> - оба отступа положительны</li>
-            <li> - один из отступов отрицательный</li>
-            <li> - вложенные элементы</li>
-            <li>Схлопывание не срабатывает: </li>
-            <li> - для элементов, у которых установлено свойство <kbd>padding</kbd>.</li>
-            <li> - для элементов, у которых на стороне схлопывания задана граница;</li>
-            <li> - на элементах с абсолютным позиционированием, т.е. таких, у которых <kbd>position</kbd> установлено как <kbd>absolute</kbd>;</li>
-            <li> - на плавающих элементах (для них свойство <kbd>float</kbd> задано как <kbd>left</kbd> или <kbd>right</kbd>);</li>
-            <li> - для строчных элементов;</li><kbd></kbd>
-            <li> - для <kbd>&lt;html&gt;</kbd></li>
-            <li>Также схлопывание не срабатывает при соблюдении некоторых условий:</li>
-            <li> - для элементов, у которых значение <kbd>overflow</kbd> задано как <kbd>auto</kbd>, <kbd>hidden</kbd> или <kbd>scroll</kbd> схлопывание не действует для их дочерних элементов;</li>
-            <li> - у элементов, к которым применяется свойство <kbd>clear</kbd>, не схлопывается верхний отступ с нижним отступом родительского элемента.</li>
+
+            <li>
+              Правила вычисления единого отступа меняются в зависимости от ряда
+              условий:
+            </li>
+
+            <li>- оба отступа положительны</li>
+            <li>- один из отступов отрицательный</li>
+            <li>- вложенные элементы</li>
+            <li>Схлопывание не срабатывает:</li>
+            <li>
+              - для элементов, у которых установлено свойство
+              <kbd>padding</kbd>.
+            </li>
+            <li>
+              - для элементов, у которых на стороне схлопывания задана граница;
+            </li>
+            <li>
+              - на элементах с абсолютным позиционированием, т.е. таких, у
+              которых <kbd>position</kbd> установлено как <kbd>absolute</kbd>;
+            </li>
+            <li>
+              - на плавающих элементах (для них свойство <kbd>float</kbd> задано
+              как <kbd>left</kbd> или <kbd>right</kbd>);
+            </li>
+            <li>- для строчных элементов;</li>
+            <li>- для <kbd>&lt;html&gt;</kbd></li>
+            <li>
+              Также схлопывание не срабатывает при соблюдении некоторых условий:
+            </li>
+            <li>
+              - для элементов, у которых значение <kbd>overflow</kbd> задано как
+              <kbd>auto</kbd>, <kbd>hidden</kbd> или
+              <kbd>scroll</kbd> схлопывание не действует для их дочерних
+              элементов;
+            </li>
+            <li>
+              - у элементов, к которым применяется свойство <kbd>clear</kbd>, не
+              схлопывается верхний отступ с нижним отступом родительского
+              элемента.
+            </li>
             <li>
               <a
                 href="http://htmlbook.ru/samlayout/blochnaya-verstka/skhlopyvayushchiesya-otstupy"
@@ -980,14 +1009,18 @@
 
       <details>
         <summary>
-          21. Как сделать так, что бы <kbd>border</kbd> учитывался в заданной ширине
-          элемента?
+          21. Как сделать так, что бы <kbd>border</kbd> учитывался в заданной
+          ширине элемента?
         </summary>
         <div class="answer">
           <span>Ответ:</span>
           <ul class="answer__list">
             <li>
-              Чтобы браузер учитывал отступы и рамку, вычисляя ширину блока, используется свойство <kbd>box-sizing</kbd> со значением <kbd>border-box</kbd> — в данном случае браузер включает отступы <kbd>padding</kbd> и рамку <kbd>border</kbd> в общую ширину/высоту элемента.
+              Чтобы браузер учитывал отступы и рамку, вычисляя ширину блока,
+              используется свойство <kbd>box-sizing</kbd> со значением
+              <kbd>border-box</kbd> — в данном случае браузер включает отступы
+              <kbd>padding</kbd> и рамку <kbd>border</kbd> в общую ширину/высоту
+              элемента.
             </li>
             <li>
               <a
@@ -1186,19 +1219,67 @@
     <section>
       <h2>JavaScript:</h2>
       <details>
-        <summary>
-          1. Что такое SetTimeout() и SetInterval()? Как это отменить?
-        </summary>
-        <p>
-          Ответ:
-        </p>
+        <summary
+          >1. Что такое <kbd>SetTimeout</kbd> и <kbd>SetInterval</kbd>? Как это
+          отменить?</summary
+        >
+        <div class="answer">
+          <span>Ответ:</span>
+          <ul class="answer__list">
+            <li>
+              В JavaScript есть две функции для отложенного запуска кода:
+              <mark>SetTimeout</mark> и <mark>SetInterval</mark>. Отличаются они
+              тем, что <mark>SetTimeout</mark> запускает код
+              <mark>единожды</mark>, а <mark>SetInterval</mark> —
+              <mark>постоянно</mark> с заданной периодичностью.
+            </li>
+            <li>
+              Обе функции первым аргументом принимают строку кода, которую
+              необходимо выполнить, или функцию, которую необходимо запустить.
+              Второй аргумент задаёт задержку в миллисекундах. Возвращают обе
+              функции идентификатор созданного таймера.
+            </li>
+            <li>
+              Действие функций <mark>SetTimeout</mark> и
+              <mark>SetInterval</mark> можно отменить функциями
+              <mark>clearTimeout</mark> и
+              <mark>clearInterval</mark> соответственно, передавая последним
+              идентификатор отключаемого таймера.
+            </li>
+            <li>
+              <a
+                href="http://alljs.ru/articles/timeout/overview"
+                target="_blank"
+              >
+                Функции setTimeout и setInterval. © alljs.ru
+              </a>
+            </li>
+          </ul>
+        </div>
       </details>
 
       <details>
-        <summary>2. Отличие "==" и "==="?</summary>
-        <p>
-          Ответ:
-        </p>
+        <summary>2. Отличие <kbd>==</kbd> и <kbd>===</kbd> ?</summary>
+        <div class="answer">
+          <span>Ответ:</span>
+          <ul class="answer__list">
+            <li>
+              Оператор
+              <kbd>==</kbd>
+              сравнивает на равенство, а вот
+              <kbd>===</kbd>
+              — на идентичность. Плюс оператора
+              <kbd>===</kbd>
+              состоит в том, что он не приводит два значения к одному типу.
+              Именно из-за этого он обычно и используется.
+            </li>
+            <li>
+              <a href="https://habr.com/ru/post/138272" target="_blank">
+                Отличия == и === в JavaScript. © Хабр
+              </a>
+            </li>
+          </ul>
+        </div>
       </details>
 
       <details>
@@ -1207,9 +1288,17 @@
           Spread/Rest; Строковые шаблоны и разделители ${ ... } ` ... `; for ...
           of vs for ... in. Классы в ES6, extends и super в классах
         </summary>
-        <p>
-          Ответ:
-        </p>
+        <div class="answer">
+          <span>Ответ:</span>
+          <ul class="answer__list">
+            <li></li>
+            <li>
+              <a href="#" target="_blank">
+                Article. © Site
+              </a>
+            </li>
+          </ul>
+        </div>
       </details>
 
       <details>
@@ -1217,82 +1306,194 @@
           4. Объявление функций: Function Declaration & Function Expression.
           Отличия
         </summary>
-        <p>
-          Ответ:
-        </p>
+        <div class="answer">
+          <span>Ответ:</span>
+          <ul class="answer__list">
+            <li></li>
+            <li>
+              <a href="#" target="_blank">
+                Article. © Site
+              </a>
+            </li>
+          </ul>
+        </div>
       </details>
 
       <details>
         <summary>5. Аргументы и Параметры функции</summary>
-        <p>
-          Ответ:
-        </p>
+        <div class="answer">
+          <span>Ответ:</span>
+          <ul class="answer__list">
+            <li></li>
+            <li>
+              <a href="#" target="_blank">
+                Article. © Site
+              </a>
+            </li>
+          </ul>
+        </div>
       </details>
 
       <details>
         <summary>6. Аргументы при вызове функции</summary>
-        <p>
-          Ответ:
-        </p>
+        <div class="answer">
+          <span>Ответ:</span>
+          <ul class="answer__list">
+            <li></li>
+            <li>
+              <a href="#" target="_blank">
+                Article. © Site
+              </a>
+            </li>
+          </ul>
+        </div>
       </details>
 
       <details>
         <summary>7. Параметры в теле функции</summary>
-        <p>
-          Ответ:
-        </p>
+        <div class="answer">
+          <span>Ответ:</span>
+          <ul class="answer__list">
+            <li></li>
+            <li>
+              <a href="#" target="_blank">
+                Article. © Site
+              </a>
+            </li>
+          </ul>
+        </div>
       </details>
 
       <details>
         <summary>
           8. Что такое наследование? Написать пример наследования
         </summary>
-        <p>
-          Ответ:
-        </p>
+        <div class="answer">
+          <span>Ответ:</span>
+          <ul class="answer__list">
+            <li></li>
+            <li>
+              <a href="#" target="_blank">
+                Article. © Site
+              </a>
+            </li>
+          </ul>
+        </div>
       </details>
 
       <details>
         <summary>9. Всплытие и перехват события (bubbling & capturing)</summary>
-        <p>
-          Ответ:
-        </p>
+        <div class="answer">
+          <span>Ответ:</span>
+          <ul class="answer__list">
+            <li></li>
+            <li>
+              <a href="#" target="_blank">
+                Article. © Site
+              </a>
+            </li>
+          </ul>
+        </div>
       </details>
 
       <details>
         <summary>10. Call, apply, bind</summary>
-        <p>
-          Ответ:
-        </p>
+        <div class="answer">
+          <span>Ответ:</span>
+          <ul class="answer__list">
+            <li></li>
+            <li>
+              <a href="#" target="_blank">
+                Article. © Site
+              </a>
+            </li>
+          </ul>
+        </div>
       </details>
 
       <details>
         <summary>11. Типы данных JS</summary>
-        <p>
-          Ответ:
-        </p>
+        <div class="answer">
+          <span>Ответ:</span>
+          <ul class="answer__list">
+            <li></li>
+            <li>
+              <a href="#" target="_blank">
+                Article. © Site
+              </a>
+            </li>
+          </ul>
+        </div>
       </details>
 
       <details>
         <summary>12. Способы клонирования объекта</summary>
-        <p>
-          Ответ:
-        </p>
+        <div class="answer">
+          <span>Ответ:</span>
+          <ul class="answer__list">
+            <li></li>
+            <li>
+              <a href="#" target="_blank">
+                Article. © Site
+              </a>
+            </li>
+          </ul>
+        </div>
       </details>
 
       <details>
         <summary>13. Scope (область видимости функции)</summary>
-        <p>
-          Ответ:
-        </p>
+        <div class="answer">
+          <span>Ответ:</span>
+          <ul class="answer__list">
+            <li></li>
+            <li>
+              <a href="#" target="_blank">
+                Article. © Site
+              </a>
+            </li>
+          </ul>
+        </div>
       </details>
 
       <details>
-        <summary>14. Виды сортировок. Написать пару примеров.</summary>
-        <p>
-          Ответ: Сортировка пузырьком, быстрая сортировка, сортировка слиянием,
-          сортировка выбором, сортировка вставками
-        </p>
+        <summary>14. Виды сортировок JavaScript и примеры.</summary>
+        <div class="answer">
+          <span>Ответ:</span>
+          <ul class="answer__list">
+            <li>Алгоритмы сортировок на JavaScript:</li>
+            <li><mark>Пузырьковая</mark> сортировка</li>
+            <li>Сортировка <mark>выбором</mark></li>
+            <li>Сортировка <mark>вставками</mark></li>
+            <li>Сортировка <mark>Шелла</mark></li>
+            <li>Сортировка <mark>подсчётом</mark></li>
+            <li>Сортировка <mark>расчёской</mark></li>
+            <li>Сортировка <mark>слиянием</mark></li>
+            <li><mark>Пирамидальная</mark> сортировка</li>
+            <li><mark>Быстрая</mark> сортировка</li>
+            <li>Сортировка <mark>перемешиванием</mark></li>
+            <li><mark>Гномья</mark> сортировка</li>
+            <li><mark>Естественная</mark> сортировка</li>
+            <li>
+              <a
+                href="http://mathhelpplanet.com/static.php?p=javascript-algoritmy-sortirovki"
+                target="_blank"
+                >Алгоритмы сортировок на JavaScript. © Математический форум Math
+                Help Planet
+              </a>
+            </li>
+            <li>
+              <a href="https://proglib.io/p/sort-gif" target="_blank"
+                >Сортировки в гифках: 8 самых популярных алгоритмов. © Proglib
+              </a>
+            </li>
+            <li>
+              <a href="https://habr.com/ru/post/127943" target="_blank"
+                >Естественная сортировка строк на JavaScript. © Хабр
+              </a>
+            </li>
+          </ul>
+        </div>
       </details>
 
       <details>
@@ -1300,9 +1501,17 @@
           15. Что такое "event.preventDefault" и "event.stopPropagation"?
           Разница между ними.
         </summary>
-        <p>
-          Ответ:
-        </p>
+        <div class="answer">
+          <span>Ответ:</span>
+          <ul class="answer__list">
+            <li></li>
+            <li>
+              <a href="#" target="_blank">
+                Article. © Site
+              </a>
+            </li>
+          </ul>
+        </div>
       </details>
 
       <details>
@@ -1310,46 +1519,94 @@
           16. Что такое обработчик событий. Способы добавления и удаления
           обработчика событий на элемент
         </summary>
-        <p>
-          Ответ:
-        </p>
+        <div class="answer">
+          <span>Ответ:</span>
+          <ul class="answer__list">
+            <li></li>
+            <li>
+              <a href="#" target="_blank">
+                Article. © Site
+              </a>
+            </li>
+          </ul>
+        </div>
       </details>
 
       <details>
         <summary>17. Что такое async?</summary>
-        <p>
-          Ответ:
-        </p>
+        <div class="answer">
+          <span>Ответ:</span>
+          <ul class="answer__list">
+            <li></li>
+            <li>
+              <a href="#" target="_blank">
+                Article. © Site
+              </a>
+            </li>
+          </ul>
+        </div>
       </details>
 
       <details>
         <summary>18. "proto" и "prototype". Цепочка прототипов</summary>
-        <p>
-          Ответ:
-        </p>
+        <div class="answer">
+          <span>Ответ:</span>
+          <ul class="answer__list">
+            <li></li>
+            <li>
+              <a href="#" target="_blank">
+                Article. © Site
+              </a>
+            </li>
+          </ul>
+        </div>
       </details>
 
       <details>
         <summary>19. Промисы. Объект Promise. Его состояния и методы</summary>
-        <p>
-          Ответ:
-        </p>
+        <div class="answer">
+          <span>Ответ:</span>
+          <ul class="answer__list">
+            <li></li>
+            <li>
+              <a href="#" target="_blank">
+                Article. © Site
+              </a>
+            </li>
+          </ul>
+        </div>
       </details>
 
       <details>
         <summary>20. Что такое замыкание?</summary>
-        <p>
-          Ответ:
-        </p>
+        <div class="answer">
+          <span>Ответ:</span>
+          <ul class="answer__list">
+            <li></li>
+            <li>
+              <a href="#" target="_blank">
+                Article. © Site
+              </a>
+            </li>
+          </ul>
+        </div>
       </details>
 
       <details>
         <summary>
           21. Принципы ООП: наследование, инкапсуляция, полиморфизм
         </summary>
-        <p>
-          Ответ:
-        </p>
+        <div class="answer">
+          <span>Ответ:</span>
+          <ul class="answer__list">
+            <li></li>
+            <li>
+              <a href="#" target="_blank">
+                Article. © Site
+              </a>
+            </li>
+          </ul>
+        </div>
       </details>
 
       <details>
@@ -1357,32 +1614,64 @@
           22. Основные паттерны проектирования (Singleton, Module, Prototype,
           Factory, MVC, ...), лучшие практики программирования
         </summary>
-        <p>
-          Ответ:
-        </p>
+        <div class="answer">
+          <span>Ответ:</span>
+          <ul class="answer__list">
+            <li></li>
+            <li>
+              <a href="#" target="_blank">
+                Article. © Site
+              </a>
+            </li>
+          </ul>
+        </div>
       </details>
 
       <details>
         <summary>
           23. Что такое Object.create()? Написать свой Object.create()
         </summary>
-        <p>
-          Ответ:
-        </p>
+        <div class="answer">
+          <span>Ответ:</span>
+          <ul class="answer__list">
+            <li></li>
+            <li>
+              <a href="#" target="_blank">
+                Article. © Site
+              </a>
+            </li>
+          </ul>
+        </div>
       </details>
 
       <details>
         <summary>24. Event loop (Callback Queue, CallStack)</summary>
-        <p>
-          Ответ:
-        </p>
+        <div class="answer">
+          <span>Ответ:</span>
+          <ul class="answer__list">
+            <li></li>
+            <li>
+              <a href="#" target="_blank">
+                Article. © Site
+              </a>
+            </li>
+          </ul>
+        </div>
       </details>
 
       <details>
         <summary>25. Режим 'use strict'</summary>
-        <p>
-          Ответ:
-        </p>
+        <div class="answer">
+          <span>Ответ:</span>
+          <ul class="answer__list">
+            <li></li>
+            <li>
+              <a href="#" target="_blank">
+                Article. © Site
+              </a>
+            </li>
+          </ul>
+        </div>
       </details>
 
       <details>
@@ -1390,25 +1679,49 @@
           26. Структуры данных: бинарное дерево, односвязный и двусвязный
           список, стек, очередь
         </summary>
-        <p>
-          Ответ:
-        </p>
+        <div class="answer">
+          <span>Ответ:</span>
+          <ul class="answer__list">
+            <li></li>
+            <li>
+              <a href="#" target="_blank">
+                Article. © Site
+              </a>
+            </li>
+          </ul>
+        </div>
       </details>
 
       <details>
         <summary>
           27. Что такое local storage, session storage и cookie?
         </summary>
-        <p>
-          Ответ:
-        </p>
+        <div class="answer">
+          <span>Ответ:</span>
+          <ul class="answer__list">
+            <li></li>
+            <li>
+              <a href="#" target="_blank">
+                Article. © Site
+              </a>
+            </li>
+          </ul>
+        </div>
       </details>
 
       <details>
         <summary>28. Как работает браузер?</summary>
-        <p>
-          Ответ:
-        </p>
+        <div class="answer">
+          <span>Ответ:</span>
+          <ul class="answer__list">
+            <li></li>
+            <li>
+              <a href="#" target="_blank">
+                Article. © Site
+              </a>
+            </li>
+          </ul>
+        </div>
       </details>
     </section>
   </body>
