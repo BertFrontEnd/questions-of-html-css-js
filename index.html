@@ -394,7 +394,7 @@
             </li>
             <li>
               <a href="https://html5css.ru/tags/default.php" target="_blank">
-                HTML Справочник всех тегов онлайн и примеры. © HTML5CSS.RU
+                HTML Справочник всех тегов онлайн и примеры. © HTML5CSS.ru
               </a>
             </li>
           </ul>
@@ -1283,18 +1283,81 @@
       </details>
 
       <details>
-        <summary>
-          3. Основные фишки ES6 (let, const; arrow functions; Promise;
-          Spread/Rest; Строковые шаблоны и разделители ${ ... } ` ... `; for ...
-          of vs for ... in. Классы в ES6, extends и super в классах
+        <summary>3. Основные фишки ES6 </summary>
+        <div class="answer">
+          <span>Ответ:</span>
+          <ul class="answer__list">
+            <li>
+              1. <kbd>let</kbd>, <kbd>const</kbd> и блочная область видимости
+            </li>
+            <li>2. Стрелочные функции</li>
+            <li>3. Параметры по умолчанию</li>
+            <li>4. Spread / Rest оператор</li>
+            <li>5. Расширение возможностей литералов объекта</li>
+            <li>6. Восьмеричный и двоичный литералы</li>
+            <li>7. Деструктуризация массивов и объектов</li>
+            <li>8. Ключевое слово super для объектов</li>
+            <li>9. Строковые шаблоны и разделители</li>
+            <li>10. <kbd>for...of</kbd> против <kbd>for...in</kbd></li>
+            <li>11. Map и WeakMap</li>
+            <li>12. Set и WeakSet</li>
+            <li>13. Классы в ES6</li>
+            <li>14. Тип данных Symbol</li>
+            <li>15. Итераторы</li>
+            <li>16. Генераторы</li>
+            <li>17. Промисы</li>
+            <li>
+              <a href="https://habr.com/ru/post/305900/#13" target="_blank">
+                ES6 по-человечески. © Хабр
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://github.com/etnolover/ES6-for-humans-translation"
+                target="_blank"
+              >
+                ES6 по-человечески. © GitHub
+              </a>
+            </li>
+          </ul>
+        </div>
+      </details>
+
+      <details>
+        <summary
+          >4. Function Declaration (объявление функций) & Function Expression
+          (функциональное выражение). Отличия
         </summary>
         <div class="answer">
           <span>Ответ:</span>
           <ul class="answer__list">
-            <li></li>
+            <li><mark>Function Declaration</mark> (объявление функций):</li>
+            <li><kbd>function hello(param) { console.log(param); };</kbd></li>
+            <li><kbd>hello('Hi');</kbd></li>
             <li>
-              <a href="#" target="_blank">
-                Article. © Site
+              <mark>Function Expression</mark> (функциональное выражение):
+            </li>
+            <li>
+              <kbd>let hello = function(param) { console.log(param); };</kbd>
+            </li>
+            <li><kbd>hello('Hi');</kbd></li>
+            <li>
+              <mark>Отличие</mark> Function Declaration от Function Expression
+              заключается в том, что при
+              <mark>декларировании</mark> (объявлении) функции, она (функция)
+              создается до выполнения остального кода. Соответственно, к моменту
+              начала выполнения кода все <mark>задекларированные</mark> функции
+              уже созданы и доступны к использованию. В случае же с
+              <mark>функциональным</mark> выражением функции будут создаваться
+              только в момент выполнения кода, а не перед ним
+            </li>
+            <li>
+              <a
+                href="https://webformyself.com/function-declaration-i-function-expression-v-javascript/"
+                target="_blank"
+              >
+                Function Declaration и Function Expression в JavaScript. ©
+                Webfor<em>Myself</em>
               </a>
             </li>
           </ul>
@@ -1302,17 +1365,110 @@
       </details>
 
       <details>
-        <summary>
-          4. Объявление функций: Function Declaration & Function Expression.
-          Отличия
-        </summary>
+        <summary
+          >5. Параметры и аргументы и функции. Аргументы при вызове функции.
+          Параметры в теле функции</summary
+        >
         <div class="answer">
           <span>Ответ:</span>
           <ul class="answer__list">
-            <li></li>
             <li>
-              <a href="#" target="_blank">
-                Article. © Site
+              <mark>Параметры</mark> функции — это <mark>имена</mark>,
+              перечисленные в определении функции.
+            </li>
+            <li>
+              При вызове функции, ей могут передаваться значения, которыми будут
+              инициализированы параметры. Значения, которые передаются при
+              вызове функции называются <mark>аргументами</mark>.
+              <mark>Аргументы</mark>, указываются через запятую. Иными словам,
+              <mark>аргументы</mark> функции — это реальные
+              <mark>значения</mark>, передаваемые (и получаемые) функцией.
+            </li>
+            <li>Поведение <mark>аргументов</mark> при вызове функции:</li>
+            <li>
+              - аргументы присваиваются параметрам функции в том порядке, в
+              каком они указаны
+            </li>
+            <li>
+              - если при вызове функции ей передаётся больше аргументов, чем
+              задано параметров, "лишние" аргументы просто не присваиваются
+              параметрам
+            </li>
+            <li>
+              - если функция имеет больше параметров, чем передано ей
+              аргументов, то параметрам без соответствующих аргументов
+              присваивается значение <kbd>undefined</kbd>.
+            </li>
+
+            <li>
+              - если функция вызывается с
+              <mark>отсутствующими</mark> аргументами (меньше, чем объявлено),
+              то отсутствующие значения имеют значение: не определено
+            </li>
+            <li>
+              - если функция вызывается с
+              <mark>слишком большим количеством аргументов</mark> (более чем
+              объявлено), Эти аргументы могут быть достигнуты с помощью
+              <mark>объекта arguments</mark>, который содержит массив
+              аргументов.
+            </li>
+            <li>
+              - аргументы передаются по значению. Изменения аргументов
+              <mark>не отображаются</mark> вне функции.
+            </li>
+            <li>
+              - объекты передаются по ссылке. Изменения свойств объекта
+              <mark>видимы</mark> вне функции.
+            </li>
+
+            <li><mark>Параметры</mark> в теле функции:</li>
+            <li>
+              - все функции имеют два неявных параметра: <kbd>arguments</kbd> и
+              <kbd>this</kbd>
+            </li>
+            <li>
+              - имеют значения по
+              <a
+                href="https://puzzleweb.ru/javascript/13_functions2.php#a1"
+                target="_blank"
+                >умолчанию</a
+              >
+            </li>
+            <li>
+              - имеют
+              <a
+                href="https://puzzleweb.ru/javascript/13_functions2.php#a2"
+                target="_blank"
+                >дополнительный</a
+              >
+              параметр
+            </li>
+            <li>Правила <mark>параметров</mark>:</li>
+            <li>
+              - определения функций JavaScript не указывают типы данных для
+              параметров
+            </li>
+            <li>
+              - функции JavaScript не выполняют проверку типа на передаваемых
+              аргументах
+            </li>
+            <li>
+              - функции JavaScript не проверяют количество полученных аргументов
+            </li>
+            <li>
+              <a
+                href="https://html5css.ru/js/js_function_parameters.php"
+                target="_blank"
+              >
+                JavaScript Параметры функции. © HTML5CSS.ru
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://puzzleweb.ru/javascript/13_functions2.php"
+                target="_blank"
+              >
+                JavaScript: Параметры и аргументы функции. © PuzzleWeb.ru
               </a>
             </li>
           </ul>
@@ -1320,14 +1476,40 @@
       </details>
 
       <details>
-        <summary>5. Аргументы и Параметры функции</summary>
+        <summary>8. Что такое наследование? Примеры наследования </summary>
         <div class="answer">
           <span>Ответ:</span>
           <ul class="answer__list">
-            <li></li>
             <li>
-              <a href="#" target="_blank">
-                Article. © Site
+              JavaScript использует <mark>прототипное наследование</mark>. Это
+              означает, что в JavaScript объекты наследуются от других объектов.
+              Простые объекты в JavaScript, созданные с использованием
+              <kbd>{...}</kbd> фигурных скобок, имеют только один прототип:
+              <kbd>Object.prototype</kbd>. <kbd>Object.prototype</kbd>, в свою
+              очередь тоже объект, и все свойства и методы
+              <kbd>Object.prototype</kbd> доступны для всех объектов
+            </li>
+            <li>
+              Массивы, созданные с помощью <kbd>[]</kbd> квадратных скобок,
+              имеют несколько прототипов, в том числе
+              <kbd>Object.prototype</kbd> и <kbd>Array.prototype</kbd>. Это
+              означает, что все свойства и методы <kbd>Object.prototype</kbd> и
+              <kbd>Array.prototype</kbd> доступны для всех массивов. Одноименные
+              свойства и методы, например <kbd>.valueOf</kbd> и
+              <kbd>.ToString</kbd>, вызываются из ближайшего прототипа, в этом
+              случае из <kbd>Array.prototype</kbd>
+            </li>
+            <li>
+              <a href="https://habr.com/ru/post/263967" target="_blank">
+                JavaScript — шаблоны наследования. © Хабр
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://monsterlessons.com/project/lessons/prototipnoie-nasliedovaniie-v-javascript"
+                target="_blank"
+              >
+                Прототипное наследование в Javascript. © monsterlessons
               </a>
             </li>
           </ul>
@@ -1335,68 +1517,50 @@
       </details>
 
       <details>
-        <summary>6. Аргументы при вызове функции</summary>
+        <summary
+          >9. Всплытие и перехват / погружение события (bubbling &
+          capturing)</summary
+        >
         <div class="answer">
           <span>Ответ:</span>
           <ul class="answer__list">
-            <li></li>
             <li>
-              <a href="#" target="_blank">
-                Article. © Site
+              Принцип <mark>всплытия (bubbling)</mark> заключается в том, что
+              когда на элементе происходит событие, обработчики сначала
+              срабатывают на нём, потом на его родителе, затем выше и так далее,
+              вверх по цепочке предков.
+            </li>
+            <li>
+              <mark>Погружение / перехват (capturing)</mark> описывает 3 фазы
+              прохода события: при клике на элемент событие путешествует по
+              цепочке родителей сначала вниз к элементу (погружается) -
+              <mark>capturing phase</mark>, затем оно достигает целевой элемент
+              (фаза цели) - <mark>target phase</mark>, а потом идёт наверх
+              (всплытие) - <mark>bubbling stage</mark>, вызывая по пути
+              обработчики. Данные стадии, как правило, не используются и
+              проходят незаметно для пользователя
+            </li>
+            <li>
+              <a
+                href="https://learn.javascript.ru/bubbling-and-capturing"
+                target="_blank"
+              >
+                Всплытие и погружение. © learn.javascript.ru
+              </a>
+            </li>
+            <li>
+              <a
+                href="http://know-online.com/post/javascript-bubbling"
+                target="_blank"
+              >
+                Всплытие и перехват. © Know Online
               </a>
             </li>
           </ul>
         </div>
       </details>
 
-      <details>
-        <summary>7. Параметры в теле функции</summary>
-        <div class="answer">
-          <span>Ответ:</span>
-          <ul class="answer__list">
-            <li></li>
-            <li>
-              <a href="#" target="_blank">
-                Article. © Site
-              </a>
-            </li>
-          </ul>
-        </div>
-      </details>
-
-      <details>
-        <summary>
-          8. Что такое наследование? Написать пример наследования
-        </summary>
-        <div class="answer">
-          <span>Ответ:</span>
-          <ul class="answer__list">
-            <li></li>
-            <li>
-              <a href="#" target="_blank">
-                Article. © Site
-              </a>
-            </li>
-          </ul>
-        </div>
-      </details>
-
-      <details>
-        <summary>9. Всплытие и перехват события (bubbling & capturing)</summary>
-        <div class="answer">
-          <span>Ответ:</span>
-          <ul class="answer__list">
-            <li></li>
-            <li>
-              <a href="#" target="_blank">
-                Article. © Site
-              </a>
-            </li>
-          </ul>
-        </div>
-      </details>
-
-      <details>
+      <details open>
         <summary>10. Call, apply, bind</summary>
         <div class="answer">
           <span>Ответ:</span>
@@ -1593,16 +1757,78 @@
       </details>
 
       <details>
+        <summary>20. Что такое рекурсия?</summary>
+        <div class="answer">
+          <span>Ответ:</span>
+          <ul class="answer__list">
+            <li>
+              <mark>Рекурсия</mark> – это когда функция в своём теле вызывает
+              саму себя. Функцию, которая вызывает сама себя, называют
+              <mark>рекурсивной функцией</mark>. Вызов рекурсивной функции,
+              называется <mark>рекурсивным вызовом</mark>.
+            </li>
+            <li>
+              <a
+                href="https://puzzleweb.ru/javascript/20_recursiya.php"
+                target="_blank"
+              >
+                JavaScript: Рекурсия. © PuzzleWeb.ru
+              </a>
+            </li>
+          </ul>
+        </div>
+      </details>
+
+      <details>
         <summary>
           21. Принципы ООП: наследование, инкапсуляция, полиморфизм
         </summary>
         <div class="answer">
           <span>Ответ:</span>
           <ul class="answer__list">
-            <li></li>
             <li>
-              <a href="#" target="_blank">
-                Article. © Site
+              <mark>Наследование</mark> – это свойство системы, позволяющее
+              описать новый класс на основе уже существующего с частично или
+              полностью заимствующейся функциональностью. Класс, от которого
+              производится наследование, называется базовым или родительским.
+              Новый класс – потомком, наследником или производным классом. Новый
+              класс – потомком, наследником или производным классом.
+              <mark>Класс</mark> – это способ описания сущности, определяющий
+              состояние и поведение, зависящее от этого состояния, а также
+              правила для взаимодействия с данной сущностью (контракт).
+            </li>
+            <li>
+              <mark>Инкапсуляция</mark> – это свойство системы, позволяющее
+              объединить данные и методы, работающие с ними, в классе и скрыть
+              детали реализации от пользователя. Инкапсуляция неразрывно связана
+              с понятием интерфейса класса. По сути, всё то, что не входит в
+              интерфейс, инкапсулируется в классе. <mark>Интерфейс</mark> – это
+              набор методов класса, доступных для использования другими
+              классами.
+            </li>
+            <li>
+              <mark>Полиморфизм</mark> – это свойство системы использовать
+              объекты с одинаковым интерфейсом без информации о типе и
+              внутренней структуре объекта.
+            </li>
+            <li>
+              <a href="https://habr.com/ru/post/87119" target="_blank">
+                ООП с примерами (часть 1). © Хабр
+              </a>
+            </li>
+            <li>
+              <a href="https://habr.com/ru/post/87205" target="_blank">
+                ООП с примерами (часть 2). © Хабр
+              </a>
+            </li>
+
+            <li>
+              <a
+                href="https://tproger.ru/translations/oop-js-fundamentals"
+                target="_blank"
+              >
+                Фундаментальные принципы объектно-ориентированного
+                программирования на JavaScript. © Tproger
               </a>
             </li>
           </ul>
