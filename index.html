@@ -1951,8 +1951,8 @@
       </details>
 
       <details>
-        <summary>
-          15. Что такое <kbd>event.preventDefault</kbd> и
+        <summary
+          >15. Что такое <kbd>event.preventDefault</kbd> и
           <kbd>event.stopPropagation</kbd>? Разница между ними.
         </summary>
         <div class="answer">
@@ -1982,15 +1982,15 @@
       </details>
 
       <details>
-        <summary>
-          16. Что такое обработчик событий. Способы добавления и удаления
+        <summary
+          >16. Что такое обработчик событий. Способы добавления и удаления
           обработчика событий на элемент
         </summary>
         <div class="answer">
           <span>Ответ:</span>
           <ul class="answer__list">
             <li>
-              <mark>Событие</mark> – это сигнал от браузера о том, что что-то
+              <mark>Событие</mark> — это сигнал от браузера о том, что что-то
               произошло. Все DOM-узлы подают такие сигналы (хотя события бывают
               и не только в DOM)
             </li>
@@ -2084,32 +2084,129 @@
         <div class="answer">
           <span>Ответ:</span>
           <ul class="answer__list">
-            <li></li>
             <li>
-              <a href="#" target="_blank">
-                Article. © Site
+              Простыми словами: <mark>callback</mark> — это функция, которая
+              должна быть выполнена после того, как другая функция завершила
+              выполнение (отсюда и название: callback – функция обратного
+              вызова)
+            </li>
+            <li>
+              Чуть сложнее: В JavaScript функции — это объекты. Поэтому функции
+              могут принимать другие функции в качестве аргументов, а также
+              функции могут возвращать функции в качестве результата. Функции,
+              которые это умеют, называются
+              <mark>функциями высшего порядка</mark>. А любая функция, которая
+              передается как аргумент, называется
+              <mark>callback-функцией</mark>
+            </li>
+            <li>
+              <a
+                href="https://ru.hexlet.io/blog/posts/javascript-what-the-heck-is-a-callback"
+                target="_blank"
+              >
+                Что такое callback-функция в JavaScript? © Хекслет
+              </a>
+            </li>
+            <li>
+              <a
+                href="http://getinstance.info/articles/javascript/callbacks-in-javascript/"
+                target="_blank"
+              >
+                Функции обратного вызова в JavaScript. © .getInstance
+              </a>
+            </li>
+            <li>
+              <a href="https://learn.javascript.ru/callbacks" target="_blank">
+                Введение: колбэки. © learn.javascript.ru
               </a>
             </li>
           </ul>
         </div>
       </details>
 
-      <details open>
+      <details>
         <summary>19. Промисы. Объект Promise. Его состояния и методы</summary>
         <div class="answer">
           <span>Ответ:</span>
           <ul class="answer__list">
             <li><mark>Промис — от английского promise — обещать</mark></li>
+            <li>
+              <mark>Объект Promise</mark> используется для отложенных и
+              асинхронных вычислений
+            </li>
+            <li>
+              <mark>Promise</mark> представляет собой обертку для значения,
+              неизвестного на момент создания обещания. Он позволяет
+              обрабатывать результаты асинхронных операций так, как если бы они
+              были синхронными: вместо конечного результата асинхронного метода
+              возвращается обещание, результат которого можно получить в
+              некоторый момент в будущем
+            </li>
+            <li>
+              При создании обещание находится в ожидании, состояние
+              <mark>pending</mark>, а затем может стать выполнено
+              <mark>fulfilled</mark>, вернув полученный результат
+              <mark>resolved</mark>, или отклонено <mark>rejected</mark>, вернув
+              причину отказа
+            </li>
+            <li>
+              Объект «обещание» создается с помощью конструктора
+              <kbd>new Promise(...)</kbd>, которому в качестве аргумента
+              передается анонимная функция с <mark>двумя параметрами:</mark>
+              <kbd>resolve</kbd>, <kbd>reject</kbd>. Они, в свою очередь, так же
+              являются <mark>функциями:</mark> <kbd>resolve()</kbd> — сообщает о
+              том, что код выполнен «успешно», <kbd>reject()</kbd> – код
+              выполнен с «ошибкой». Это что-то вроде
+              <kbd>if(true) {...} else {...}</kbd>
+            </li>
+            <li>
+              В методы <kbd>resolve()</kbd> и <kbd>reject()</kbd> можно
+              передавать любые объекты. В метод <kbd>reject()</kbd>, как
+              правило, передают объект типа <kbd>Error</kbd> с указанием причины
+              ошибки («отклоненного» состояния «обещания»)
+            </li>
             <li>У промиса есть 3 состояния:</li>
             <li>- промис в состоянии ожидания <kbd>pending</kbd></li>
             <li>- промис решен <kbd>resolved</kbd></li>
             <li>- промис отклонен <kbd>rejected</kbd></li>
+            <li>
+              Всякий раз, когда вы создаете объект «обещание», становятся
+              доступны <mark>два метода:</mark> <kbd>then()</kbd> и
+              <kbd>catch()</kbd>. Используя их, вы можете выполнить нужный код
+              при успешном разрешении «обещания» <kbd>resolve(...)</kbd> или же
+              код, обрабатывающий ситуацию с «ошибкой» <kbd>reject(...)</kbd>.
+            </li>
+            <li>
+              <a
+                href="http://getinstance.info/articles/javascript/grokking-es6-promises-the-four-functions-you-need-to-avoid-callback-hel/"
+              >
+                Введение в ES6 Promises, или четыре функции, которые вам нужно
+                знать. © .getInstance
+              </a>
+            </li>
+            <li>
+              <a
+                href="http://getinstance.info/articles/javascript/understanding-promises/"
+              >
+                Три способа понять промисы. © .getInstance
+              </a>
+            </li>
             <li>
               <a
                 href="https://medium.com/@stasonmars/%D0%BF%D1%80%D0%BE%D0%BC%D0%B8%D1%81%D1%8B-%D0%B2-javascript-%D0%B4%D0%BB%D1%8F-%D1%87%D0%B0%D0%B8%CC%86%D0%BD%D0%B8%D0%BA%D0%BE%D0%B2-60bbef963541"
                 target="_blank"
               >
                 Промисы в JavaScript для чайников. © Medium
+              </a>
+            </li>
+            <li>
+              <a href="https://habr.com/ru/company/zerotech/blog/317256">
+                Путеводитель по JavaScript Promise для новичков. © Хабр
+              </a>
+            </li>
+            <li>
+              <a href="https://learn.javascript.ru/promise-basics">
+                Промисы. © learn.javascript.ru
               </a>
             </li>
           </ul>
@@ -2121,10 +2218,77 @@
         <div class="answer">
           <span>Ответ:</span>
           <ul class="answer__list">
-            <li></li>
             <li>
-              <a href="#" target="_blank">
-                Article. © Site
+              <mark>Прототипы</mark> — это механизм, с помощью которого объекты
+              JavaScript наследуют свойства друг от друга
+            </li>
+            <li>
+              JavaScript часто описывают как язык
+              <mark>прототипного наследования</mark> — каждый объект, имеет
+              объект-прототип, который выступает как шаблон, от которого объект
+              наследует методы и свойства. Объект-прототип так же может иметь
+              свой прототип и наследовать его свойства и методы и так далее. Это
+              часто называется <mark>цепочкой прототипов</mark> и объясняет
+              почему одним объектам доступны свойства и методы которые
+              определены в других объектах
+            </li>
+            <li>
+              В JavaScript создается связь между экземпляром объекта и его
+              прототипом (свойство <kbd>__proto__</kbd>, которое является
+              производным от свойства prototype конструктора), а свойства и
+              методы обнаруживаются при переходе по цепочке прототипов
+            </li>
+            <li>
+              <a
+                href="https://developer.mozilla.org/ru/docs/Learn/JavaScript/%D0%9E%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D1%8B/Object_prototypes"
+                target="_blank"
+              >
+                Прототипы объектов. © MDN web docs
+              </a>
+            </li>
+            <li>
+              <a href="https://habr.com/ru/post/140810" target="_blank">
+                Prototype, proto и оператор new. © Хабр
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://ru.stackoverflow.com/questions/765445/%D0%92-%D1%87%D0%B5%D0%BC-%D0%BE%D1%82%D0%BB%D0%B8%D1%87%D0%B8%D0%B5-proto-%D0%BE%D1%82-prototype"
+                target="_blank"
+              >
+                В чем отличие __proto__ от prototype? © stack<b>overflow</b>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://learn.javascript.ru/prototype-inheritance"
+                target="_blank"
+              >
+                Прототипное наследование © learn.javascript.ru
+              </a>
+            </li>
+            <li>
+              Свойство <kbd>__proto__</kbd> — ссылка на объект, в котором будет
+              искаться свойство, если оно не найдено в текущем объекте
+            </li>
+            <li>
+              <a
+                href="http://old.code.mu/javascript/object/proto.html"
+                target="_blank"
+              >
+                Свойство __proto__ © code.mu
+              </a>
+            </li>
+            <li>
+              Значение свойства <kbd>prototype</kbd> записывается в прототип
+              объекта <kbd>__proto__</kbd> при создании объектов через new
+            </li>
+            <li>
+              <a
+                href="http://old.code.mu/javascript/object/prototype.html"
+                target="_blank"
+              >
+                Свойство prototype © code.mu
               </a>
             </li>
           </ul>
@@ -2175,10 +2339,55 @@
         <div class="answer">
           <span>Ответ:</span>
           <ul class="answer__list">
-            <li></li>
             <li>
-              <a href="#" target="_blank">
-                Article. © Site
+              <mark>Замыкание</mark> — это функция, объявленная внутри другой
+              функции и имеющая доступ к переменным внешней (вмещающей) функции.
+              Замыкание имеет доступ сразу к трем областям видимости:
+            </li>
+            <li>
+              - к своей <mark>собственной</mark> области видимости (переменные,
+              объявленные внутри замыкания)
+            </li>
+            <li>
+              - к области видимости <mark>внешней</mark> функции (переменные,
+              объявленные внутри внешней функции)
+            </li>
+            <li>- к <mark>глобальной</mark> области видимости</li>
+            <li>
+              Простыми словами
+              <mark
+                >замыкание — это функция, описанная внутри другой функции</mark
+              >
+            </li>
+            <li>
+              <mark>Внутренняя функция</mark> имеет доступ не только к
+              переменным внешней функции, но и к параметрам внешней функции.
+              Внутренняя функция не может использовать объект arguments внешней
+              функции, однако, имеет доступ к параметрам внешней функции
+              напрямую
+            </li>
+            <li>
+              <a
+                href="http://getinstance.info/articles/javascript/closures-in-javascript/"
+                target="_blank"
+              >
+                Замыкания в JavaScript. © .getInstance
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://htmlacademy.ru/blog/boost/frontend/lets-learn-javascript-closures"
+                target="_blank"
+              >
+                Замыкания в JavaScript. © htmlacademy
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://habr.com/ru/company/ruvds/blog/424967"
+                target="_blank"
+              >
+                Замыкания в JavaScript для начинающих. © Хабр
               </a>
             </li>
           </ul>
@@ -2226,7 +2435,7 @@
           <span>Ответ:</span>
           <ul class="answer__list">
             <li>
-              <mark>Рекурсия</mark> – это когда функция в своём теле вызывает
+              <mark>Рекурсия</mark> — это когда функция в своём теле вызывает
               саму себя. Функцию, которая вызывает сама себя, называют
               <mark>рекурсивной функцией</mark>. Вызов рекурсивной функции,
               называется <mark>рекурсивным вызовом</mark>.
@@ -2251,7 +2460,7 @@
           <span>Ответ:</span>
           <ul class="answer__list">
             <li>
-              <mark>Наследование</mark> – это свойство системы, позволяющее
+              <mark>Наследование</mark> — это свойство системы, позволяющее
               описать новый класс на основе уже существующего с частично или
               полностью заимствующейся функциональностью. Класс, от которого
               производится наследование, называется базовым или родительским.
@@ -2262,7 +2471,7 @@
               правила для взаимодействия с данной сущностью (контракт).
             </li>
             <li>
-              <mark>Инкапсуляция</mark> – это свойство системы, позволяющее
+              <mark>Инкапсуляция</mark> — это свойство системы, позволяющее
               объединить данные и методы, работающие с ними, в классе и скрыть
               детали реализации от пользователя. Инкапсуляция неразрывно связана
               с понятием интерфейса класса. По сути, всё то, что не входит в
@@ -2271,7 +2480,7 @@
               классами.
             </li>
             <li>
-              <mark>Полиморфизм</mark> – это свойство системы использовать
+              <mark>Полиморфизм</mark> — это свойство системы использовать
               объекты с одинаковым интерфейсом без информации о типе и
               внутренней структуре объекта.
             </li>
@@ -2285,7 +2494,6 @@
                 ООП с примерами (часть 2). © Хабр
               </a>
             </li>
-
             <li>
               <a
                 href="https://tproger.ru/translations/oop-js-fundamentals"
@@ -2293,6 +2501,11 @@
               >
                 Фундаментальные принципы объектно-ориентированного
                 программирования на JavaScript. © Tproger
+              </a>
+            </li>
+            <li>
+              <a href="https://habr.com/ru/post/175029" target="_blank">
+                Нужны ли в JavaScript классы? © Хабр
               </a>
             </li>
           </ul>
@@ -2307,10 +2520,160 @@
         <div class="answer">
           <span>Ответ:</span>
           <ul class="answer__list">
-            <li></li>
             <li>
-              <a href="#" target="_blank">
-                Article. © Site
+              <mark>Шаблоны проектирования</mark> — это руководства по решению
+              повторяющихся проблем. Это не классы, пакеты или библиотеки,
+              которые можно было бы подключить к вашему приложению и сидеть в
+              ожидании чуда. Они скорее являются методиками, как решать
+              определенные проблемы в определенных ситуациях
+            </li>
+            <li>Википедия описывает их следующим образом:</li>
+            <li>
+              <mark
+                >Шаблон проектирования, или паттерн, в разработке программного
+                обеспечения</mark
+              >
+              — повторяемая архитектурная конструкция, представляющая собой
+              решение проблемы проектирования, в рамках некоторого часто
+              возникающего контекста.
+            </li>
+            <li><mark>Нужно иметь ввиду:</mark></li>
+            <li>
+              - шаблоны проектирования
+              <mark>не являются решением всех</mark> ваших <mark>проблем</mark>;
+            </li>
+            <li>
+              - не пытайтесь использовать их в обязательном порядке — это может
+              привести к негативным последствиям. Шаблоны — это подходы
+              <mark>к решению проблем, а не решения для поиска проблем</mark>
+            </li>
+            <li>
+              - если их правильно использовать в нужных местах, то они
+              <mark>могут стать спасением</mark>, а иначе
+              <mark>могут привести к ужасному беспорядку</mark>.
+            </li>
+            <li>
+              <mark>Шаблоны</mark> бывают следующих <mark>трех видов</mark>:
+            </li>
+            <li>- порождающие</li>
+            <li>- структурные</li>
+            <li>- поведенческие</li>
+            <li>
+              <mark>Порождающие шаблоны</mark> — шаблоны проектирования, которые
+              абстрагируют процесс инстанцирования. Они позволяют сделать
+              систему независимой от способа создания, композиции и
+              представления объектов. Шаблон, порождающий классы, использует
+              наследование, чтобы изменять наследуемый класс, а шаблон,
+              порождающий объекты, делегирует инстанцирование другому объекту
+            </li>
+            <li>
+              <mark>Структурные шаблоны</mark> — шаблоны проектирования, в
+              которых рассматривается вопрос о том, как из классов и объектов
+              образуются более крупные структуры
+            </li>
+            <li>
+              <mark>Поведенческие шаблоны</mark> — шаблоны проектирования,
+              определяющие алгоритмы и способы реализации взаимодействия
+              различных объектов и классов.
+            </li>
+            <li>
+              <a
+                href="https://tproger.ru/translations/design-patterns-simple-words-1"
+                target="_blank"
+              >
+                Шаблоны проектирования простым языком. Часть первая. Порождающие
+                шаблон. © Tproger
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://tproger.ru/translations/design-patterns-simple-words-2"
+                target="_blank"
+              >
+                Шаблоны проектирования простым языком. Часть вторая. Структурные
+                шаблоны. © Tproger
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://tproger.ru/translations/design-patterns-simple-words-3"
+                target="_blank"
+              >
+                Шаблоны проектирования простым языком. Часть третья.
+                Поведенческие шаблоны. © Tproger
+              </a>
+            </li>
+            <li><mark>Порождающие паттерны:</mark></li>
+            <li>- Singleton (одиночка)</li>
+            <li>- Registry (реестр, журнал записей)</li>
+            <li>- Multiton (пул «одиночек»)</li>
+            <li>- Object pool (пул объектов)</li>
+            <li>- Factory (фабрика)</li>
+            <li>- Builder (строитель)</li>
+            <li>- Prototype (прототип)</li>
+            <li>- Factory method (фабричный метод)</li>
+            <li>- Lazy initialization (отложенная инициализация)</li>
+            <li>- Dependency injection (внедрение зависимости)</li>
+            <li>
+              <a href="https://proglib.io/p/learn-oop-patterns" target="_blank">
+                Паттерны ООП простыми словами: порождающие паттерны. © proglib
+              </a>
+            </li>
+            <li><mark>Структурирующие паттерны:</mark></li>
+            <li>- Adapter или wrapper (адаптер, обертка)</li>
+            <li>- Bridge (мост)</li>
+            <li>- Composite (компоновщик)</li>
+            <li>- Decorator (декоратор, оформитель)</li>
+            <li>- Facade (фасад)</li>
+            <li>- Front controller (единая точка входа)</li>
+            <li>- Flyweight (приспособленец)</li>
+            <li>- Proxy или surrogate (прокси, заместитель, суррогат)</li>
+            <li>
+              <a
+                href="https://proglib.io/p/learn-oop-patterns-2"
+                target="_blank"
+              >
+                Паттерны ООП простыми словами: структурирующие паттерны. ©
+                proglib
+              </a>
+            </li>
+            <li><mark>Паттерны поведения:</mark></li>
+            <li>- Chain of responsibility (цепочка обязанностей)</li>
+            <li>- Command/action (команда/действие)</li>
+            <li>- Iterator (итератор, указатель)</li>
+            <li>- Mediator (посредник)</li>
+            <li>- Specification (спецификация, определение)</li>
+            <li>- Subsumption (категоризация)</li>
+            <li>- Memento (хранитель)</li>
+            <li>- Observer или Listener (наблюдатель, слушатель)</li>
+            <li>- Blackboard (доска объявлений)</li>
+            <li>- Servant (слуга)</li>
+            <li>- Visitor (посетитель)</li>
+            <li>- Single-serving visitor (одноразовый посетитель)</li>
+            <li>- Hierarchical visitor (иерархический посетитель)</li>
+            <li>- State (состояние)</li>
+            <li>- Strategy (стратегия)</li>
+            <li>
+              <a
+                href="https://proglib.io/p/learn-behavioral-patterns"
+                target="_blank"
+              >
+                Паттерны ООП простыми словами: паттерны поведения. © proglib
+              </a>
+            </li>
+            <li><mark>Распространенные паттерны JavaScript:</mark></li>
+            <li>
+              <a href="https://proglib.io/p/js-design-patterns" target="_blank">
+                Шаблоны проектирования в JavaScript простыми словами. © proglib
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://proglib.io/p/javascript-patterns/"
+                target="_blank"
+              >
+                Паттерны JavaScript: курс, который упростит разработку. ©
+                proglib
               </a>
             </li>
           </ul>
@@ -2319,15 +2682,29 @@
 
       <details>
         <summary>
-          23. Что такое Object.create()? Написать свой Object.create()
+          23. Что такое Object.create? Привести примеры Object.create
         </summary>
         <div class="answer">
           <span>Ответ:</span>
           <ul class="answer__list">
-            <li></li>
             <li>
-              <a href="#" target="_blank">
-                Article. © Site
+              <mark>Object.create</mark> - функция, которая создает объект и
+              записывает в прототип переданный в параметре объект
+            </li>
+            <li>
+              <a
+                href="http://old.code.mu/javascript/object/create.html"
+                target="_blank"
+              >
+                Функции Object.create © code.mu
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object/create"
+                target="_blank"
+              >
+                Object.create() © MDN web docs
               </a>
             </li>
           </ul>
@@ -2335,14 +2712,41 @@
       </details>
 
       <details>
-        <summary>24. Event loop (Callback Queue, CallStack)</summary>
+        <summary>24. Event loop (Callback Queue, Call Stack)</summary>
         <div class="answer">
           <span>Ответ:</span>
           <ul class="answer__list">
-            <li></li>
             <li>
-              <a href="#" target="_blank">
-                Article. © Site
+              <mark>Event loop — Цикл событий</mark> — решает одну основную
+              задачу: наблюдает за стеком вызовов и очередью коллбэков
+            </li>
+            <li>
+              <mark>Callback Queue — Очередь коллбэков</mark> — то место, куда в
+              процессе выполнения кода попадают коллбэк-функции
+            </li>
+            <li>
+              <mark>Call Stack — Стек вызовов</mark> — то место, куда в процессе
+              выполнения кода попадают так называемые стековые кадры
+            </li>
+            <li>
+              <mark>Memory Heap — Куча</mark> — то место, где происходит
+              выделение памяти.
+            </li>
+            <li>
+              <a
+                href="https://habr.com/ru/company/ruvds/blog/340508"
+                target="_blank"
+              >
+                Как работает JS: цикл событий, асинхронность и пять способов
+                улучшения кода с помощью async / await. © Хабр
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://developer.mozilla.org/ru/docs/Web/JavaScript/EventLoop"
+                target="_blank"
+              >
+                Параллельная модель и цикл событий. © MDN web docs
               </a>
             </li>
           </ul>
@@ -2350,21 +2754,42 @@
       </details>
 
       <details>
-        <summary>25. Режим 'use strict'</summary>
+        <summary>25. Режим — 'use strict'</summary>
         <div class="answer">
           <span>Ответ:</span>
           <ul class="answer__list">
-            <li></li>
             <li>
-              <a href="#" target="_blank">
-                Article. © Site
+              На данный момент достаточно иметь общее понимание об этом режиме:
+            </li>
+            <li>
+              - директива "use strict" <mark>переключает</mark> движок в
+              «современный» режим, изменяя поведение некоторых встроенных
+              функций
+            </li>
+            <li>
+              - строгий режим <mark>включается</mark> путём размещения "use
+              strict" в начале скрипта или функции. Некоторые функции языка,
+              такие как «классы» и «модули»,
+              <mark>автоматически включают</mark> строгий режим
+            </li>
+            <li>
+              -строгий режим <mark>поддерживается</mark> всеми
+              <mark>современными браузерами</mark>
+            </li>
+            <li>
+              - рекомендуется <mark>всегда начинать</mark> скрипты с "use
+              strict"
+            </li>
+            <li>
+              <a href="https://learn.javascript.ru/strict-mode" target="_blank">
+                Строгий режим — "use strict". © learn.javascript.ru
               </a>
             </li>
           </ul>
         </div>
       </details>
 
-      <details>
+      <details open>
         <summary>
           26. Структуры данных: бинарное дерево, односвязный и двусвязный
           список, стек, очередь
