@@ -2,7 +2,7 @@
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 ul {
@@ -14,7 +14,7 @@ body {
   width: 100%;
   max-width: 1020px;
   background-color: #ced6e0;
-  background-image: url('assets/bg.png');
+  background-image: url("assets/bg.png");
   background-repeat: repeat;
   font-family: 'Trebuchet MS', 'Lucida Sans', sans-serif;
   font-size: 14px;
@@ -22,7 +22,11 @@ body {
 }
 
 section {
-  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+section:first-child {
+  margin-top: 20px;
 }
 
 section h2 {
@@ -36,7 +40,7 @@ section h2 {
 section details {
   margin-bottom: 10px;
   -webkit-box-shadow: 0 1px 5px rgba(255, 255, 255, 0.2);
-  box-shadow: 0 1px 5px rgba(255, 255, 255, 0.2);
+          box-shadow: 0 1px 5px rgba(255, 255, 255, 0.2);
 }
 
 section details summary::-webkit-details-marker {
@@ -57,7 +61,7 @@ section details summary {
   /* color: #d29d25; */
   /* color: #444; */
   -webkit-box-shadow: 0 1px 5px rgba(255, 255, 255, 0.2);
-  box-shadow: 0 1px 5px rgba(255, 255, 255, 0.2);
+          box-shadow: 0 1px 5px rgba(255, 255, 255, 0.2);
   -webkit-transition: 0.3s ease-out;
   transition: 0.3s ease-out;
 }
@@ -69,7 +73,7 @@ section details summary:hover {
 
 section details summary:before {
   content: '';
-  background-image: url('assets/angle-right-solid.svg');
+  background-image: url("assets/angle-right-solid.svg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -140,7 +144,7 @@ section details .answer .answer__list li a:after {
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
   -webkit-transform: scaleX(1);
-  transform: scaleX(1);
+          transform: scaleX(1);
 }
 
 section details .answer .answer__list li a:before {
@@ -168,6 +172,6 @@ section details .answer .answer__list li a:hover::before {
 
 details[open] summary::before {
   -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 /*# sourceMappingURL=style.css.map */

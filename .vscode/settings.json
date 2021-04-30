@@ -18,7 +18,7 @@
     "типографике",
     "типографики"
   ],
-  "terminal.integrated.shell.windows": "C:\\Users\\bsk\\AppData\\Local\\Programs\\Git\\bin\\bash.exe",
+  /* "terminal.integrated.shell.windows": "C:\\Users\\bsk\\AppData\\Local\\Programs\\Git\\bin\\bash.exe", */
   "files.autoSave": "onFocusChange",
   "editor.tabSize": 2
 }
